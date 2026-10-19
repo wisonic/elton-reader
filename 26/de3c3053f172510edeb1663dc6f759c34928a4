@@ -1,0 +1,25 @@
+src/main.js
+  s_b0d6ce3e8e1c2e::t_1d27428d2114d2 398-512
+  s_b0d6ce3e8e1c2e::t_b1b6596c1c0472 384
+  s_b0d6ce3e8e1c2e::t_4d5d48ebeea039 8887-8888
+  s_b0d6ce3e8e1c2e::t_333243f8c5f971 519-522
+  s_b0d6ce3e8e1c2e::t_954c79369fe973 386-397
+main.js
+  s_b0d6ce3e8e1c2e::t_4fd1ee1e596947 55074,55076-55202,55209,63011-63012
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "26de3c3053f172510edeb1663dc6f759c34928a4",
+  "prompts": {},
+  "sessions": {
+    "s_b0d6ce3e8e1c2e": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a15373-fb8d-7610-bbda-30220530e7a7",
+        "model": "gpt-6-luna"
+      },
+      "human_author": "qihang <qibing.gong@hipac.cn>"
+    }
+  }
+}
