@@ -3170,6 +3170,38 @@ async function extractEpub(file, app) {
         // paths such as OPS/images/plate.jpg silently become PS/images/plate.jpg.
         return "/" + stack.join("/");
       };
+      // Preserve font-size rules used by EPUB stylesheets. Most of the book's
+      // CSS is intentionally discarded when converting XHTML to the reader's
+      // small safe HTML subset, but size changes such as `.small {font-size:
+      // .833em}` carry useful meaning and should remain visible.
+      const epubCss = [];
+      for (const style of Array.from(doc.querySelectorAll?.("style") ?? [])) epubCss.push(style.textContent || "");
+      for (const link of Array.from(doc.querySelectorAll?.('link[rel~="stylesheet"][href]') ?? [])) {
+        const href = link.getAttribute("href");
+        if (!href) continue;
+        try {
+          const css = await book.archive.getText(resolveArchivePath(href));
+          if (css) epubCss.push(css);
+        } catch { /* a missing optional stylesheet should not stop the chapter */ }
+      }
+      const fontSizes = new Map();
+      for (const css of epubCss) {
+        for (const rule of css.matchAll(/([^{}]+)\{([^{}]*)\}/g)) {
+          const declaration = rule[2].match(/(?:^|;)\s*font-size\s*:\s*([^;!}]+)\s*(?:!important\s*)?(?:;|$)/i);
+          if (!declaration) continue;
+          const size = declaration[1].trim();
+          if (!/^(?:\d+(?:\.\d+)?|\.\d+)(?:em|rem|px|pt|%|ex|ch)$|^(?:xx-small|x-small|small|medium|large|x-large|xx-large|smaller|larger)$/.test(size)) continue;
+          for (const selector of rule[1].split(",")) {
+            for (const match of selector.matchAll(/\.([\w-]+)/g)) fontSizes.set(match[1], size);
+          }
+        }
+      }
+      for (const el of Array.from(body.querySelectorAll?.("*") ?? [])) {
+        const inlineSize = el.style?.fontSize;
+        const classes = String(el.getAttribute?.("class") || "").split(/\s+/).filter(Boolean);
+        const size = inlineSize || classes.reduce((found, cls) => fontSizes.get(cls) || found, "");
+        if (size) el.setAttribute("data-er-font-size", size);
+      }
       for (const img of imgs) {
         let src = img.getAttribute("src") || img.getAttribute("data-src");
         if (!src) {
@@ -3180,7 +3212,21 @@ async function extractEpub(file, app) {
         if (!src || src.startsWith("data:")) continue;
         try {
           const resolved = resolveArchivePath(src);
-          const dataUrl = await book.archive.getBase64(resolved);
+          let dataUrl = await book.archive.getBase64(resolved);
+          // Some EPUB readers store a leading slash in spine URLs or use a
+          // package-root image path. Try these equivalent archive paths before
+          // leaving a broken image reference behind.
+          if (!dataUrl) {
+            const candidates = [
+              resolveArchivePath("/" + src.replace(/^\/+/, "")),
+              resolveArchivePath("/OEBPS/" + src.replace(/^\/+/, "")),
+            ];
+            for (const candidate of new Set(candidates)) {
+              if (candidate === resolved) continue;
+              dataUrl = await book.archive.getBase64(candidate);
+              if (dataUrl) break;
+            }
+          }
           if (dataUrl) {
             img.setAttribute("src", dataUrl);
             img.removeAttribute("srcset");
@@ -4987,7 +5033,9 @@ function nodeToHtml(el) {
   const tag = (_b = (_a = el.tagName) == null ? void 0 : _a.toLowerCase()) != null ? _b : "";
   const text = (_d = (_c = el.textContent) == null ? void 0 : _c.trim()) != null ? _d : "";
   const dataId = el.getAttribute?.("data-er-id");
-  const idAttr = dataId && /^[a-zA-Z0-9_.:-]+$/.test(dataId) ? ` data-er-id="${escHtml(dataId)}"` : "";
+  const size = el.getAttribute?.("data-er-font-size") || "";
+  const fontAttr = /^(?:\d+(?:\.\d+)?|\.\d+)(?:em|rem|px|pt|%|ex|ch)$|^(?:xx-small|x-small|small|medium|large|x-large|xx-large|smaller|larger)$/.test(size) ? ` style="font-size:${escHtml(size)}"` : "";
+  const idAttr = (dataId && /^[a-zA-Z0-9_.:-]+$/.test(dataId) ? ` data-er-id="${escHtml(dataId)}"` : "") + fontAttr;
   if (!text && !["br", "hr", "img"].includes(tag) && !((_a2 = el.querySelector) == null ? void 0 : _a2.call(el, "img")))
     return "";
   if (/^h[1-6]$/.test(tag))
@@ -5000,6 +5048,14 @@ function nodeToHtml(el) {
     const src = (_c2 = (_b2 = el.getAttribute) == null ? void 0 : _b2.call(el, "src")) != null ? _c2 : "";
     if (!src) return "";
     return `<img src="${escHtml(src)}" style="max-width:100%;height:auto;display:block;margin:8px auto">`;
+  }
+  // Inline wrappers are common around EPUB figures (`span.fit > img`). Keep
+  // their children instead of dropping the image because the wrapper has no
+  // textContent, and carry small-font styles through to the rendered markup.
+  if (tag === "span" || tag === "small") {
+    const inner = inlineHtml(el);
+    if (fontAttr) return `<span${fontAttr}>${inner}</span>`;
+    return inner;
   }
   if (tag === "pre") {
     const code = (el.textContent || "").replace(/\s+$/, "");
@@ -5021,7 +5077,7 @@ function nodeToHtml(el) {
       const direct = directText(el).trim();
       return direct ? `<p>${escHtml(direct)}</p>` : "";
     }
-    return childHtml;
+    return fontAttr ? `<div${fontAttr}>${childHtml}</div>` : childHtml;
   }
   if (tag === "a") {
     const inner = inlineHtml(el);
@@ -5034,9 +5090,12 @@ function nodeToHtml(el) {
     return inner.trim() ? `<p${idAttr}>${inner}</p>` : "";
   }
   if (["ul", "ol", "dl"].includes(tag)) {
-    return Array.from(el.children).map((c) => nodeToHtml(c)).filter(Boolean).join("\n");
+    const inner = Array.from(el.children).map((c) => nodeToHtml(c)).filter(Boolean).join("\n");
+    return inner && fontAttr ? `<div${fontAttr}>${inner}</div>` : inner;
   }
-  return text ? `<p>${escHtml(text)}</p>` : "";
+  const inner = inlineHtml(el);
+  if (!inner.trim()) return "";
+  return fontAttr ? `<span${fontAttr}>${inner}</span>` : inner;
 }
 function inlineHtml(el) {
   let _a2;
@@ -5048,7 +5107,13 @@ function inlineHtml(el) {
     } else if (node.nodeType === Node.ELEMENT_NODE) {
       const t = (_c = (_b = node.tagName) == null ? void 0 : _b.toLowerCase()) != null ? _c : "";
       const inner = inlineHtml(node);
-      if (["b", "strong"].includes(t))
+      const size = node.getAttribute?.("data-er-font-size") || "";
+      const fontAttr = /^(?:\d+(?:\.\d+)?|\.\d+)(?:em|rem|px|pt|%|ex|ch)$|^(?:xx-small|x-small|small|medium|large|x-large|xx-large|smaller|larger)$/.test(size) ? ` style="font-size:${escHtml(size)}"` : "";
+      if (t === "span" && fontAttr)
+        out += `<span${fontAttr}>${inner}</span>`;
+      else if (t === "small")
+        out += `<small${fontAttr}>${inner}</small>`;
+      else if (["b", "strong"].includes(t))
         out += `<strong>${inner}</strong>`;
       else if (["i", "em"].includes(t))
         out += `<em>${inner}</em>`;
