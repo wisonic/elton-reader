@@ -264,6 +264,10 @@ Object.assign(__erEN, {
   "Ошибка: {0}": "Error: {0}",
   "Плагин стал легче почти на 4 МБ": "The plugin is nearly 4 MB lighter",
   "Ширина строки": "Line width",
+  "失焦时隐藏书籍内容": "Hide book content when the window loses focus",
+  "窗口失去焦点时显示仿代码遮罩；回到窗口后点击遮罩恢复阅读。": "Show a code-like cover when the window loses focus. Click it after returning to resume reading.",
+  "点击遮罩恢复阅读": "Click the cover to resume reading",
+  "阅读内容已隐藏": "Reading content hidden",
   "Максимальная длина строки в символах. На широком мониторе строка во весь экран уходит за 150 символов, и глаз теряет начало следующей — привычный удобный диапазон 60–90. Лишняя ширина уходит в поля, разбивка книги на страницы от этого не меняется.":
     "Longest line, in characters. On a wide monitor a full-width line runs past 150 characters and the eye loses its place returning to the next one — the comfortable range is 60-90. The spare width becomes margin; how the book is split into pages does not change.",
   "Во всю ширину": "Full width",
@@ -366,6 +370,7 @@ const __erZH = {
   "Настроить":"设置", "Перевод":"翻译", "Данные":"数据", "Настройки чтения":"阅读设置", "Папка":"文件夹", "ПАПКА":"文件夹", "Теги":"标签", "ТЕГИ":"标签", "Корень хранилища":"仓库根目录", "Например: идеи, психология":"例如：灵感、心理学", "Папка и теги запомнятся для следующей заметки. Сам фрагмент попадёт в текст целиком — название на это не влияет.":"文件夹和标签会记住并用于下一条笔记。选中的整段文字都会写入笔记，标题不会影响正文。", "Создать заметку":"创建笔记", "Создать новую заметку":"创建新笔记", "Текстом в заметку книги":"添加到书籍笔记", "В заметку книги":"添加到书籍笔记", "Цитаты добавлены":"引文已添加", "Открыть заметку «{0}» в отдельной вкладке?":"要在新标签页中打开笔记“{0}”吗？", "Да, открыть":"是，打开", "Нет":"否", "Скопировать как цитату":"复制为引文", "Копировать текст":"复制文本", "Скопировано ✓":"已复制 ✓", "Остановился здесь":"在此处添加书签", "Экспортировать в заметку книги":"导出到书籍笔记", "Выделить: {0}":"高亮：{0}", "Снять выделение":"取消高亮", "Жёлтый":"黄色", "Зелёный":"绿色", "Голубой":"蓝色", "Розовый":"粉色", "Листание":"翻页", "По клику":"点击翻页", "Кнопками":"按钮", "«По клику»: клик по левой части страницы — назад, по правой — вперёд. Центр свободен для выделения текста.":"点击页面左侧向前翻页、右侧向后翻页；页面中央可用于选择文字。", "Содержание":"目录", "Оглавление":"目录", "Сноска":"注释", "Закрыть":"关闭", "В этой книге не нашлось ни оглавления, ни заголовков.":"这本书没有可用的目录或章节标题。", "Фильтр по названию…":"按标题筛选…", "Ничего не найдено":"没有找到匹配项", "стр. {0}":"第 {0} 页", "разв. {0}":"第 {0} 跨页", "компьютер":"电脑", "планшет":"平板", "телефон":"手机", "за всё время с книгами":"累计阅读", "{0} дн. подряд":"连续 {0} 天", "сегодня":"今天", "дней с книгой":"阅读天数", "в среднем за день":"日均阅读", "лучший день":"最长阅读", "14 дней назад":"14 天前", "Откройте книгу и включите таймер ▶ — здесь появится история чтения.":"打开书籍并启动 ▶ 计时器，阅读记录将显示在这里。",
   "Так будет выглядеть текст книги":"书籍正文预览", "Вид":"显示", "Как в Obsidian":"跟随 Obsidian", "Светлая":"浅色", "Тёмная":"深色", "Сколько знаков помещается в строку. Короткая строка читается легче.":"每行显示的字符数。较短的行更易阅读。", "Как листать":"翻页方式", "Страницы":"分页", "Страница":"单页", "Две":"双页", "Одна":"单页", "Авто":"自动", "Прокрутка":"滚动", "Межстрочный":"行距", "Страниц рядом":"并排页面", "Две страницы разворачиваются только на широком экране.":"仅在宽屏上并排显示两页。", "Справка":"说明", "Комментарий к выделению":"选区批注", "Комментарий хранится вместе с выделением и попадает в заметку при переносе. Очистите поле, чтобы удалить его.":"批注会与高亮一起保存，导出时也会写入笔记。清空输入框即可删除批注。", "Ваша мысль об этом фрагменте…":"写下你对这段文字的想法…", "Сохранить":"保存", "Отмена":"取消", "Изменить комментарий":"编辑批注", "Новая заметка из выделения":"根据选区新建笔记", "Вернуться к месту":"返回阅读位置", "Название":"名称",
   "Ширина строки":"行宽", "Максимальная длина строки в символах. На широком мониторе строка во весь экран уходит за 150 символов, и глаз теряет начало следующей — привычный удобный диапазон 60–90. Лишняя ширина уходит в поля, разбивка книги на страницы от этого не меняется.":"行宽上限（字符数）。宽屏上整行可能超过 150 个字符，让人难以找到下一行的开头；通常 60–90 个字符更易阅读。多余空间会留作页边距，不影响分页。", "Во всю ширину":"占满整行", "Листание страниц":"翻页方式", "«Кнопками» — стрелки/клавиши/свайп. «По клику» — клик по левой/правой части страницы листает назад/вперёд (центр свободен для выделения текста).":"“按钮”模式可用箭头、键盘或滑动翻页；“点击”模式可点击页面左右侧翻页，中央区域仍可用于选择文字。", "По клику мышкой":"点击页面", "Анимация листания":"翻页动画", "Страница плавно уезжает в сторону при перелистывании — по этому движению видно, что книга сдвинулась и в какую сторону. Не зависит от системной настройки «уменьшить анимацию»: та убирает украшения, а это обратная связь. Выключите, если предпочитаете мгновенное переключение.":"翻页时页面会平滑移开，让你看清翻页方向。此效果独立于系统的“减少动态效果”设置；如果偏好即时切换，可关闭。",
+  "失焦时隐藏书籍内容":"窗口失焦时隐藏书籍内容", "窗口失去焦点时显示仿代码遮罩；回到窗口后点击遮罩恢复阅读。":"窗口失去焦点时显示仿代码遮罩；回到窗口后点击遮罩即可恢复阅读。", "点击遮罩恢复阅读":"点击遮罩恢复阅读", "阅读内容已隐藏":"阅读内容已隐藏",
   "Как читать":"阅读方式", "«Страницами» — текст разбит на развороты, листается как книга. «Прокруткой» — одна длинная колонка, которую листаешь пальцем или колесом, как сайт; многие так читают дольше, потому что текст не останавливается на краю страницы. В прокрутке место запоминается по абзацу у ВЕРХНЕГО края экрана, и надёжнее всего отметить его самому: «⋯» → «Сохранить позицию». Откройте книгу заново, чтобы применить.":"“分页”会将文字排成书页并逐页翻阅；“滚动”则像网页一样连续浏览。滚动模式按屏幕顶部附近的段落记录位置，也可以通过“⋯”→“保存位置”手动标记。重新打开书籍后生效。", "Страницами":"分页", "Прокруткой":"滚动", "Цель чтения":"阅读目标", "Таймер цели чтения":"阅读目标计时器", "Обратный отсчёт до дневной цели (например, 15 минут) — сколько ещё осталось прочитать. Запускается ВРУЧНУЮ кнопкой ▶ вверху читалки, рядом с «Сохранить» (пауза — ⏸).":"倒计时显示距离每日目标（例如 15 分钟）还需阅读多久。点击阅读器顶部“保存”旁的 ▶ 手动启动，点击 ⏸ 暂停。", "Цель на день, минут":"每日阅读目标（分钟）", "Сколько минут в день вы хотите читать. Прогресс за сегодня — в карточке вверху этой вкладки.":"设置每天计划阅读的分钟数。今日进度显示在本页顶部卡片中。", "Как выглядит страница — во вкладке «Оформление». Шрифт, размер и межстрочный интервал настраиваются прямо в книге — иконка ползунков вверху читалки.":"页面外观请在“外观”页设置。字体、字号和行距也可在书籍阅读器顶部的滑块图标中调整。",
   "Сервис":"服务", "Ключ":"密钥", "Хранится в настройках плагина, внутри вашего хранилища. Если хранилище синхронизируется, ключ едет вместе с ним — держите это в уме.":"密钥保存在仓库中的插件设置里。如果仓库会同步，密钥也会随之同步，请留意。", "Модель":"模型", "Пусто — модель по умолчанию для этого сервиса: {0}":"留空则使用此服务的默认模型：{0}", "Свой системный промпт":"自定义系统提示词", "Что именно делать с фрагментом. Пусто — встроенный разбор: перевод, трудные слова, обороты, этимология. Свой текст заменяет его целиком — и для разбора, и для ваших вопросов в окне разбора.":"设置如何分析选中文本。留空使用内置分析（翻译、生词、表达方式和词源）；填写后将完全替代内置提示词，并用于分析和后续提问。", "Например: объясни простыми словами и дай два примера из жизни.":"例如：用简单的语言解释，并举两个生活中的例子。", "Отвечать на языке":"回复语言", "На каком языке писать разбор. Язык самой книги определяется сам.":"指定分析回复所用的语言；书籍原文语言会自动识别。", "Локальная модель: текст никуда не уходит, но нужен запущенный Ollama или LM Studio на этом же компьютере.":"本地模型不会上传文本，但需要在这台电脑上运行 Ollama 或 LM Studio。", "Выделенный фрагмент отправляется на {0}. Всё остальное в читалке работает офлайн.":"选中的文本会发送到 {0}。阅读器的其他功能均可离线使用。",
   "Режимы":"模式", "Свой вид на каждом устройстве":"为每台设备单独设置外观", "Размер шрифта, тема, шрифт, интервал, число колонок и выравнивание запоминаются отдельно для компьютера, планшета и телефона. Настройки хранятся в одном файле и синхронизируются, но каждое устройство читает свою часть, поэтому крупный шрифт на телефоне больше не делает его огромным на компьютере. Папки, шаблоны и прогресс чтения остаются общими. Это устройство: {0}.":"电脑、平板和手机分别保存字号、主题、字体、行距、栏数和对齐方式。设置仍保存在同一个同步文件中，各设备只读取自己的配置，因此手机上的大字号不会影响电脑。文件夹、模板和阅读进度仍然共用。当前设备：{0}。", "Режим для e-ink читалок":"电子墨水屏模式", "Для Obsidian на Android-читалке с электронными чернилами. Убирает анимации, плавные переходы, тени и размытие — они оставляют на таком экране следы. Чистый чёрный на белом, жёсткие рамки, крупнее кнопки, листание без скольжения.":"适用于 Android 电子墨水设备上的 Obsidian。关闭动画、渐变、阴影和模糊，避免屏幕残影；使用纯黑白、高对比边框和更大的按钮，并关闭滑动翻页。",
@@ -564,6 +569,7 @@ const DEFAULT = {
   exportColors: true,
   // По умолчанию читалка выглядит как сам Obsidian — включая тёмные темы.
   theme: "auto",
+  privacyShieldEnabled: false,
   // Библиотека — это интерфейс, а не страница книги: тёмное приложение со светлым
   // каталогом внутри выглядит сломанным, поэтому у неё своя тема и по умолчанию она
   // следует за Obsidian. "reader" — брать ту же тему, что у страницы книги.
@@ -875,6 +881,129 @@ function svgIcon(el, name) {
     }
   } catch { /* an icon is decoration; never let it break the reader */ }
   return el;
+}
+function setupAutoHideTopbar(root, top) {
+  root.addClass("er-top-auto-enabled");
+  top.addClass("er-top-autohide");
+  const trigger = root.createEl("button", {
+    cls: "er-top-reveal",
+    attr: { type: "button", "aria-label": "显示阅读工具栏" }
+  });
+  root.insertBefore(trigger, top);
+  if (!window.matchMedia?.("(pointer: coarse)")?.matches) return;
+  let timer = 0;
+  const scheduleClose = () => {
+    window.clearTimeout(timer);
+    timer = window.setTimeout(() => root.removeClass("er-top-open"), 4500);
+  };
+  trigger.addEventListener("click", () => {
+    root.addClass("er-top-open");
+    scheduleClose();
+  });
+  top.addEventListener("click", scheduleClose);
+  top.addEventListener("keydown", scheduleClose);
+}
+function setupPrivacyShield(owner, root) {
+  if (!root || owner._privacyShieldCleanup) return;
+  root.style.position = "relative";
+  const shield = root.createDiv("er-privacy-shield");
+  shield.setAttribute("role", "button");
+  shield.setAttribute("tabindex", "0");
+  shield.setAttribute("aria-hidden", "true");
+  const code = shield.createDiv("er-privacy-code");
+  [
+    "const session = await reader.open(document);",
+    "function renderPage(source, options) {",
+    "  const blocks = parse(source);",
+    "  return layout(blocks, options);",
+    "}",
+    "",
+    "if (window.isFocused) {",
+    "  cache.restore(session);",
+    "  updateViewport();",
+    "}",
+    "",
+    "class ReaderState {",
+    "  constructor(position, preferences) {",
+    "    this.position = position;",
+    "    this.preferences = preferences;",
+    "  }",
+    "}",
+    "",
+    "const result = await storage.read(key);",
+    "console.info('ready');"
+  ].forEach((line, i) => {
+    const row = code.createDiv("er-privacy-line");
+    row.createSpan({ cls: "er-privacy-ln", text: String(i + 1).padStart(2, "0") });
+    row.createSpan({ cls: "er-privacy-src", text: line || " " });
+  });
+  const maskTitles = () => {
+    if (!owner.file) return;
+    const doc = root.ownerDocument;
+    const titles = Array.from(doc.querySelectorAll(".workspace-tab-header-inner-title, .view-header-title"));
+    owner._privacyTitleNodes = titles.filter((el) => el.textContent?.trim() === owner.file.basename).map((el) => ({ el, text: el.textContent }));
+    owner._privacyTitleNodes.forEach(({ el }) => { el.textContent = "reader-state.ts"; });
+  };
+  const restoreTitles = () => {
+    (owner._privacyTitleNodes || []).forEach(({ el, text }) => {
+      if (el.isConnected && el.textContent === "reader-state.ts") el.textContent = text;
+    });
+    owner._privacyTitleNodes = [];
+  };
+  const onBlur = () => {
+    if (owner.plugin?.settings?.privacyShieldEnabled !== true) return;
+    shield.addClass("er-privacy-shield-on");
+    shield.setAttribute("aria-hidden", "false");
+    owner._privacyShieldActive = true;
+    if (owner.titleEl) owner.titleEl.setText(__ertr("阅读内容已隐藏"));
+    maskTitles();
+  };
+  const restore = () => {
+    shield.removeClass("er-privacy-shield-on");
+    shield.setAttribute("aria-hidden", "true");
+    owner._privacyShieldActive = false;
+    if (owner.titleEl && owner.file) owner.titleEl.setText(owner.file.basename);
+    restoreTitles();
+  };
+  shield.addEventListener("click", restore);
+  shield.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") { event.preventDefault(); restore(); }
+  });
+  window.addEventListener("blur", onBlur);
+  const onActiveLeafChange = (leaf) => {
+    if (!owner.leaf || leaf === owner.leaf || owner.plugin?.settings?.privacyShieldEnabled !== true) return;
+    onBlur();
+  };
+  if (owner.app?.workspace && typeof owner.registerEvent === "function") {
+    owner.registerEvent(owner.app.workspace.on("active-leaf-change", onActiveLeafChange));
+  }
+  owner._privacyShieldCleanup = () => {
+    window.removeEventListener("blur", onBlur);
+    shield.removeEventListener("click", restore);
+    shield.remove();
+    restoreTitles();
+    owner._privacyShieldCleanup = null;
+  };
+}
+function setupAutoHideBottombar(root, bar) {
+  bar.addClass("er-bot-autohide");
+  const trigger = root.createEl("button", {
+    cls: "er-bot-reveal",
+    attr: { type: "button", "aria-label": "显示页码和阅读进度" }
+  });
+  root.insertBefore(trigger, bar);
+  if (!window.matchMedia?.("(pointer: coarse)")?.matches) return;
+  let timer = 0;
+  const scheduleClose = () => {
+    window.clearTimeout(timer);
+    timer = window.setTimeout(() => root.removeClass("er-bot-open"), 4500);
+  };
+  trigger.addEventListener("click", () => {
+    root.addClass("er-bot-open");
+    scheduleClose();
+  });
+  bar.addEventListener("click", scheduleClose);
+  bar.addEventListener("keydown", scheduleClose);
 }
 // Icon followed by a text label — the other shape the old innerHTML calls took.
 function iconLabel(el, name, text) {
@@ -3133,27 +3262,6 @@ async function extractEpub(file, app) {
         el.setAttribute("id", unique);
         el.setAttribute("data-er-id", unique);
       }
-      // EPUB footnotes commonly link a tiny magnifier icon to a note later in
-      // the same XHTML file. Preserve that relationship before simplifying the
-      // document to the reader's safe, small HTML subset.
-      for (const link of Array.from(body.querySelectorAll?.("a[href^='#']") ?? [])) {
-        const href = link.getAttribute("href") || "";
-        let fragment = href.slice(1);
-        try { fragment = decodeURIComponent(fragment); } catch { /* keep original fragment */ }
-        const ref = ids.get(fragment);
-        if (!ref) continue;
-        link.setAttribute("data-er-ref", ref);
-        link.removeAttribute("href");
-        link.classList?.add("er-footnote-ref");
-        const image = link.querySelector?.("img");
-        const target = targets.get(fragment);
-        const isNoteIcon = image && /footnote|note/i.test(`${link.getAttribute("class") || ""} ${target?.getAttribute?.("class") || ""} ${image.getAttribute("src") || ""}`);
-        if (isNoteIcon) {
-          const noteNumber = (target?.textContent || "").match(/^\s*\[(\d+)\]/)?.[1];
-          link.textContent = noteNumber ? `[${noteNumber}]` : "†";
-          link.setAttribute("data-er-footnote-marker", "1");
-        }
-      }
       const imgs = Array.from(body.querySelectorAll?.("img") ?? []);
       const itemPath = String(item.url || item.href || "").split(/[?#]/, 1)[0];
       const itemDir = itemPath.split("/").slice(0, -1).join("/");
@@ -3170,6 +3278,58 @@ async function extractEpub(file, app) {
         // paths such as OPS/images/plate.jpg silently become PS/images/plate.jpg.
         return "/" + stack.join("/");
       };
+      // Footnote links in some EPUBs include the current XHTML filename
+      // (`chapter.xhtml#note-1`) rather than a bare fragment (`#note-1`).
+      // Resolve both forms before converting the source to safe reader HTML.
+      for (const [fragment, anchor] of targets) {
+        if (anchor.tagName?.toLowerCase() !== "a") continue;
+        let parent = anchor.parentElement;
+        while (parent && parent !== body) {
+          const type = parent.getAttribute?.("epub:type") || parent.getAttribute?.("type") || "";
+          const classes = parent.getAttribute?.("class") || "";
+          if (/footnote/i.test(`${type} ${classes}`)) {
+            parent.setAttribute("data-er-id", ids.get(fragment));
+            targets.set(fragment, parent);
+            break;
+          }
+          parent = parent.parentElement;
+        }
+      }
+      const currentDoc = epubNavKey(itemPath);
+      for (const link of Array.from(body.querySelectorAll?.("a[href]") ?? [])) {
+        const href = link.getAttribute("href") || "";
+        let ancestor = link.parentElement;
+        let insideFootnote = false;
+        while (ancestor && ancestor !== body) {
+          if (/footnote/i.test(`${ancestor.getAttribute?.("epub:type") || ""} ${ancestor.getAttribute?.("type") || ""} ${ancestor.getAttribute?.("class") || ""}`)) {
+            insideFootnote = true;
+            break;
+          }
+          ancestor = ancestor.parentElement;
+        }
+        // Backlinks inside the note are not useful in a popup; leave their
+        // visible number as plain text instead of making it open another popup.
+        if (insideFootnote) { link.removeAttribute("href"); continue; }
+        const hash = href.indexOf("#");
+        if (hash < 0 || hash === href.length - 1) continue;
+        const docPath = href.slice(0, hash);
+        if (docPath && epubNavKey(resolveArchivePath(docPath)) !== currentDoc) continue;
+        let fragment = href.slice(hash + 1);
+        try { fragment = decodeURIComponent(fragment); } catch { /* keep original fragment */ }
+        const ref = ids.get(fragment);
+        if (!ref) continue;
+        link.setAttribute("data-er-ref", ref);
+        link.removeAttribute("href");
+        link.classList?.add("er-footnote-ref");
+        const image = link.querySelector?.("img");
+        const target = targets.get(fragment);
+        const isNoteIcon = image && /footnote|note/i.test(`${link.getAttribute("class") || ""} ${target?.getAttribute?.("class") || ""} ${image.getAttribute("src") || ""}`);
+        if (isNoteIcon) {
+          const noteNumber = (target?.textContent || "").match(/^\s*\[(\d+)\]/)?.[1];
+          link.textContent = noteNumber ? `[${noteNumber}]` : "†";
+          link.setAttribute("data-er-footnote-marker", "1");
+        }
+      }
       // Preserve font-size rules used by EPUB stylesheets. Most of the book's
       // CSS is intentionally discarded when converting XHTML to the reader's
       // small safe HTML subset, but size changes such as `.small {font-size:
@@ -7372,6 +7532,7 @@ const ReaderView = class extends ItemView {
     addBookFileMenu(this.app, menu, this.file);
   }
   getDisplayText() {
+    if (this._privacyShieldActive) return "reader-state.ts";
     let _a, _b;
     return (_b = (_a = this.file) == null ? void 0 : _a.basename) != null ? _b : "Book Reader";
   }
@@ -7650,12 +7811,15 @@ const ReaderView = class extends ItemView {
   // ── DOM ──────────────────────────────────────────────
   buildDOM() {
     const root = this.contentEl;
+    this._privacyShieldCleanup?.();
     root.empty();
     root.addClass("er-view");
+    setupPrivacyShield(this, root);
     this.applyVars();
     const pb = root.createDiv("er-pbar");
     this.pbarFill = pb.createDiv("er-pbar-fill");
     const top = root.createDiv("er-top");
+    setupAutoHideTopbar(root, top);
     const lb = top.createDiv("er-ibtn");
     svgIcon(lb, "arrow-left");
     lb.addEventListener("click", () => this.plugin.openLibrary());
@@ -7705,11 +7869,11 @@ const ReaderView = class extends ItemView {
     this.areaEl = root.createDiv("er-area");
     if ((this.plugin.settings.navMode || "buttons") === "click") root.addClass("er-navclick");
     const bot = root.createDiv("er-bot");
+    setupAutoHideBottombar(root, bot);
     const pv = bot.createDiv("er-navbtn");
     svgIcon(pv, "chevron-left");
     pv.addEventListener("click", () => this.nav("prev"));
-    const center = bot.createDiv("er-bot-center");
-    this.locEl = center.createDiv("er-loc er-loc-clickable");
+    this.locEl = bot.createDiv("er-loc er-loc-clickable er-page-current");
     this.locEl.setAttribute("aria-label", __ertr("Перейти к странице"));
     this.locEl.addEventListener("click", () => {
       if (!this.file || !this.pager || !this.pager.total) return;
@@ -7719,8 +7883,10 @@ const ReaderView = class extends ItemView {
         this.plugin.saveProgress(this.file.path, cur, tot, this.pager.currentBlockIndex());
       }).open();
     });
-    this.pctEl = center.createDiv("er-pct");
+    this.pctEl = bot.createDiv("er-pct er-bottom-progress");
     this.pctEl.setText("0%");
+    this.totalEl = bot.createDiv("er-total er-page-total");
+    this.totalEl.setAttribute("aria-label", "总页数");
     const nx = bot.createDiv("er-navbtn");
     svgIcon(nx, "chevron-right");
     nx.addEventListener("click", () => this.nav("next"));
@@ -7942,8 +8108,8 @@ const ReaderView = class extends ItemView {
     const pct = total > 0 ? Math.round((cur + 1) / total * 100) : 0;
     this.pbarFill.style.width = `${pct}%`;
     const bookPage = currentBookPage(this);
-    const where = this.ext === "pdf" ? __ertr("Разворот {0} из {1}", cur + 1, total) : `${cur + 1} / ${total}`;
-    this.locEl.setText(bookPage ? __ertr("стр. {0}", bookPage) + " \xB7 " + where : where);
+    this.locEl.setText(String(bookPage || cur + 1));
+    this.totalEl.setText(String(total));
     this.pctEl.setText(`${pct}%`);
     renderVisibleFigures(this);
   }
@@ -8428,6 +8594,7 @@ const ReaderView = class extends ItemView {
   }
   async onClose() {
     erHideVeil(this);
+    this._privacyShieldCleanup?.();
     let _a;
     stopReadingTimer(this);
     window.clearTimeout(this._immTimer);
@@ -9315,10 +9482,13 @@ const ReaderModal = class extends Modal {
   }
   _buildDOM() {
     const root = this.contentEl;
+    this._privacyShieldCleanup?.();
     root.empty();
+    setupPrivacyShield(this, root);
     const pb = root.createDiv("er-pbar");
     this.pbarFill = pb.createDiv("er-pbar-fill");
     const top = root.createDiv("er-top");
+    setupAutoHideTopbar(root, top);
     const lb  = top.createDiv("er-ibtn");
     svgIcon(lb, "arrow-left");
     lb.setAttribute("aria-label", __ertr("Закрыть книгу"));
@@ -9379,11 +9549,11 @@ const ReaderModal = class extends Modal {
     if ((this.plugin.settings.navMode || "buttons") === "click") root.addClass("er-navclick");
     // Bottom reading-goal progress bar removed by request; the ▶ timer stays in the top bar.
     const bot = root.createDiv("er-bot");
+    setupAutoHideBottombar(root, bot);
     const pv  = bot.createDiv("er-navbtn");
     svgIcon(pv, "chevron-left");
     pv.addEventListener("click", () => this._nav("prev"));
-    const center = bot.createDiv("er-bot-center");
-    this.locEl = center.createDiv("er-loc er-loc-clickable");
+    this.locEl = bot.createDiv("er-loc er-loc-clickable er-page-current");
     this.locEl.setAttribute("aria-label", __ertr("Перейти к странице"));
     this.locEl.addEventListener("click", () => {
       if (!this.file || !this.pager || !this.pager.total) return;
@@ -9393,8 +9563,10 @@ const ReaderModal = class extends Modal {
         this.plugin.saveProgress(this.file.path, cur, tot, this.pager.currentBlockIndex());
       }).open();
     });
-    this.pctEl = center.createDiv("er-pct");
+    this.pctEl = bot.createDiv("er-pct er-bottom-progress");
     this.pctEl.setText("0%");
+    this.totalEl = bot.createDiv("er-total er-page-total");
+    this.totalEl.setAttribute("aria-label", "总页数");
     const nx = bot.createDiv("er-navbtn");
     svgIcon(nx, "chevron-right");
     nx.addEventListener("click", () => this._nav("next"));
@@ -9681,7 +9853,8 @@ const ReaderModal = class extends Modal {
     const pct = total > 0 ? Math.round((cur + 1) / total * 100) : 0;
     this.pbarFill.style.width = `${pct}%`;
     const bookPage = currentBookPage(this);
-    this.locEl.setText(bookPage ? __ertr("стр. {0}", bookPage) + " · " + `${cur + 1} / ${total}` : `${cur + 1} / ${total}`);
+    this.locEl.setText(String(bookPage || cur + 1));
+    this.totalEl.setText(String(total));
     this.pctEl.setText(`${pct}%`);
     renderVisibleFigures(this);
   }
@@ -10068,6 +10241,7 @@ const ReaderModal = class extends Modal {
   }
   onClose() {
     stopReadingTimer(this);
+    this._privacyShieldCleanup?.();
     if (this.plugin._openReaderModal === this) this.plugin._openReaderModal = null;
     // The search paint is a document-level highlight; it would outlive the book.
     clearFoundIn(this);
@@ -10310,6 +10484,13 @@ const SettingsTab = class extends PluginSettingTab {
             if (view && view.bookHtml) view.repaginate();
           }
         }));
+    new Setting(c)
+      .setName(__ertr("失焦时隐藏书籍内容"))
+      .setDesc(__ertr("窗口失去焦点时显示仿代码遮罩；回到窗口后点击遮罩恢复阅读。"))
+      .addToggle((t) => t.setValue(this.plugin.settings.privacyShieldEnabled === true).onChange(async (v) => {
+        this.plugin.settings.privacyShieldEnabled = v;
+        await this.plugin.saveAll();
+      }));
     // Appearance used to hang off this tab as a button that opened a window.
     // It is a section of its own now — a whole group of settings behind one row
     // reads as an afterthought, and "how the page looks" is not an afterthought.

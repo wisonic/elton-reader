@@ -54749,6 +54749,10 @@ Object.assign(__erEN, {
   "\u041E\u0448\u0438\u0431\u043A\u0430: {0}": "Error: {0}",
   "\u041F\u043B\u0430\u0433\u0438\u043D \u0441\u0442\u0430\u043B \u043B\u0435\u0433\u0447\u0435 \u043F\u043E\u0447\u0442\u0438 \u043D\u0430 4 \u041C\u0411": "The plugin is nearly 4 MB lighter",
   "\u0428\u0438\u0440\u0438\u043D\u0430 \u0441\u0442\u0440\u043E\u043A\u0438": "Line width",
+  "\u5931\u7126\u65F6\u9690\u85CF\u4E66\u7C4D\u5185\u5BB9": "Hide book content when the window loses focus",
+  "\u7A97\u53E3\u5931\u53BB\u7126\u70B9\u65F6\u663E\u793A\u4EFF\u4EE3\u7801\u906E\u7F69\uFF1B\u56DE\u5230\u7A97\u53E3\u540E\u70B9\u51FB\u906E\u7F69\u6062\u590D\u9605\u8BFB\u3002": "Show a code-like cover when the window loses focus. Click it after returning to resume reading.",
+  "\u70B9\u51FB\u906E\u7F69\u6062\u590D\u9605\u8BFB": "Click the cover to resume reading",
+  "\u9605\u8BFB\u5185\u5BB9\u5DF2\u9690\u85CF": "Reading content hidden",
   "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u0430\u044F \u0434\u043B\u0438\u043D\u0430 \u0441\u0442\u0440\u043E\u043A\u0438 \u0432 \u0441\u0438\u043C\u0432\u043E\u043B\u0430\u0445. \u041D\u0430 \u0448\u0438\u0440\u043E\u043A\u043E\u043C \u043C\u043E\u043D\u0438\u0442\u043E\u0440\u0435 \u0441\u0442\u0440\u043E\u043A\u0430 \u0432\u043E \u0432\u0435\u0441\u044C \u044D\u043A\u0440\u0430\u043D \u0443\u0445\u043E\u0434\u0438\u0442 \u0437\u0430 150 \u0441\u0438\u043C\u0432\u043E\u043B\u043E\u0432, \u0438 \u0433\u043B\u0430\u0437 \u0442\u0435\u0440\u044F\u0435\u0442 \u043D\u0430\u0447\u0430\u043B\u043E \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0439 \u2014 \u043F\u0440\u0438\u0432\u044B\u0447\u043D\u044B\u0439 \u0443\u0434\u043E\u0431\u043D\u044B\u0439 \u0434\u0438\u0430\u043F\u0430\u0437\u043E\u043D 60\u201390. \u041B\u0438\u0448\u043D\u044F\u044F \u0448\u0438\u0440\u0438\u043D\u0430 \u0443\u0445\u043E\u0434\u0438\u0442 \u0432 \u043F\u043E\u043B\u044F, \u0440\u0430\u0437\u0431\u0438\u0432\u043A\u0430 \u043A\u043D\u0438\u0433\u0438 \u043D\u0430 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B \u043E\u0442 \u044D\u0442\u043E\u0433\u043E \u043D\u0435 \u043C\u0435\u043D\u044F\u0435\u0442\u0441\u044F.": "Longest line, in characters. On a wide monitor a full-width line runs past 150 characters and the eye loses its place returning to the next one \u2014 the comfortable range is 60-90. The spare width becomes margin; how the book is split into pages does not change.",
   "\u0412\u043E \u0432\u0441\u044E \u0448\u0438\u0440\u0438\u043D\u0443": "Full width",
   "\u041A\u043B\u0430\u0441\u0442\u044C \u0437\u0430\u043C\u0435\u0442\u043A\u0438 \u0440\u044F\u0434\u043E\u043C \u0441 \u043A\u043D\u0438\u0433\u043E\u0439": "Keep notes next to the book",
@@ -54943,6 +54947,10 @@ var __erZH = {
   "\u041F\u043E \u043A\u043B\u0438\u043A\u0443 \u043C\u044B\u0448\u043A\u043E\u0439": "\u70B9\u51FB\u9875\u9762",
   "\u0410\u043D\u0438\u043C\u0430\u0446\u0438\u044F \u043B\u0438\u0441\u0442\u0430\u043D\u0438\u044F": "\u7FFB\u9875\u52A8\u753B",
   "\u0421\u0442\u0440\u0430\u043D\u0438\u0446\u0430 \u043F\u043B\u0430\u0432\u043D\u043E \u0443\u0435\u0437\u0436\u0430\u0435\u0442 \u0432 \u0441\u0442\u043E\u0440\u043E\u043D\u0443 \u043F\u0440\u0438 \u043F\u0435\u0440\u0435\u043B\u0438\u0441\u0442\u044B\u0432\u0430\u043D\u0438\u0438 \u2014 \u043F\u043E \u044D\u0442\u043E\u043C\u0443 \u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044E \u0432\u0438\u0434\u043D\u043E, \u0447\u0442\u043E \u043A\u043D\u0438\u0433\u0430 \u0441\u0434\u0432\u0438\u043D\u0443\u043B\u0430\u0441\u044C \u0438 \u0432 \u043A\u0430\u043A\u0443\u044E \u0441\u0442\u043E\u0440\u043E\u043D\u0443. \u041D\u0435 \u0437\u0430\u0432\u0438\u0441\u0438\u0442 \u043E\u0442 \u0441\u0438\u0441\u0442\u0435\u043C\u043D\u043E\u0439 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 \xAB\u0443\u043C\u0435\u043D\u044C\u0448\u0438\u0442\u044C \u0430\u043D\u0438\u043C\u0430\u0446\u0438\u044E\xBB: \u0442\u0430 \u0443\u0431\u0438\u0440\u0430\u0435\u0442 \u0443\u043A\u0440\u0430\u0448\u0435\u043D\u0438\u044F, \u0430 \u044D\u0442\u043E \u043E\u0431\u0440\u0430\u0442\u043D\u0430\u044F \u0441\u0432\u044F\u0437\u044C. \u0412\u044B\u043A\u043B\u044E\u0447\u0438\u0442\u0435, \u0435\u0441\u043B\u0438 \u043F\u0440\u0435\u0434\u043F\u043E\u0447\u0438\u0442\u0430\u0435\u0442\u0435 \u043C\u0433\u043D\u043E\u0432\u0435\u043D\u043D\u043E\u0435 \u043F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435.": "\u7FFB\u9875\u65F6\u9875\u9762\u4F1A\u5E73\u6ED1\u79FB\u5F00\uFF0C\u8BA9\u4F60\u770B\u6E05\u7FFB\u9875\u65B9\u5411\u3002\u6B64\u6548\u679C\u72EC\u7ACB\u4E8E\u7CFB\u7EDF\u7684\u201C\u51CF\u5C11\u52A8\u6001\u6548\u679C\u201D\u8BBE\u7F6E\uFF1B\u5982\u679C\u504F\u597D\u5373\u65F6\u5207\u6362\uFF0C\u53EF\u5173\u95ED\u3002",
+  "\u5931\u7126\u65F6\u9690\u85CF\u4E66\u7C4D\u5185\u5BB9": "\u7A97\u53E3\u5931\u7126\u65F6\u9690\u85CF\u4E66\u7C4D\u5185\u5BB9",
+  "\u7A97\u53E3\u5931\u53BB\u7126\u70B9\u65F6\u663E\u793A\u4EFF\u4EE3\u7801\u906E\u7F69\uFF1B\u56DE\u5230\u7A97\u53E3\u540E\u70B9\u51FB\u906E\u7F69\u6062\u590D\u9605\u8BFB\u3002": "\u7A97\u53E3\u5931\u53BB\u7126\u70B9\u65F6\u663E\u793A\u4EFF\u4EE3\u7801\u906E\u7F69\uFF1B\u56DE\u5230\u7A97\u53E3\u540E\u70B9\u51FB\u906E\u7F69\u5373\u53EF\u6062\u590D\u9605\u8BFB\u3002",
+  "\u70B9\u51FB\u906E\u7F69\u6062\u590D\u9605\u8BFB": "\u70B9\u51FB\u906E\u7F69\u6062\u590D\u9605\u8BFB",
+  "\u9605\u8BFB\u5185\u5BB9\u5DF2\u9690\u85CF": "\u9605\u8BFB\u5185\u5BB9\u5DF2\u9690\u85CF",
   "\u041A\u0430\u043A \u0447\u0438\u0442\u0430\u0442\u044C": "\u9605\u8BFB\u65B9\u5F0F",
   "\xAB\u0421\u0442\u0440\u0430\u043D\u0438\u0446\u0430\u043C\u0438\xBB \u2014 \u0442\u0435\u043A\u0441\u0442 \u0440\u0430\u0437\u0431\u0438\u0442 \u043D\u0430 \u0440\u0430\u0437\u0432\u043E\u0440\u043E\u0442\u044B, \u043B\u0438\u0441\u0442\u0430\u0435\u0442\u0441\u044F \u043A\u0430\u043A \u043A\u043D\u0438\u0433\u0430. \xAB\u041F\u0440\u043E\u043A\u0440\u0443\u0442\u043A\u043E\u0439\xBB \u2014 \u043E\u0434\u043D\u0430 \u0434\u043B\u0438\u043D\u043D\u0430\u044F \u043A\u043E\u043B\u043E\u043D\u043A\u0430, \u043A\u043E\u0442\u043E\u0440\u0443\u044E \u043B\u0438\u0441\u0442\u0430\u0435\u0448\u044C \u043F\u0430\u043B\u044C\u0446\u0435\u043C \u0438\u043B\u0438 \u043A\u043E\u043B\u0435\u0441\u043E\u043C, \u043A\u0430\u043A \u0441\u0430\u0439\u0442; \u043C\u043D\u043E\u0433\u0438\u0435 \u0442\u0430\u043A \u0447\u0438\u0442\u0430\u044E\u0442 \u0434\u043E\u043B\u044C\u0448\u0435, \u043F\u043E\u0442\u043E\u043C\u0443 \u0447\u0442\u043E \u0442\u0435\u043A\u0441\u0442 \u043D\u0435 \u043E\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0435\u0442\u0441\u044F \u043D\u0430 \u043A\u0440\u0430\u044E \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B. \u0412 \u043F\u0440\u043E\u043A\u0440\u0443\u0442\u043A\u0435 \u043C\u0435\u0441\u0442\u043E \u0437\u0430\u043F\u043E\u043C\u0438\u043D\u0430\u0435\u0442\u0441\u044F \u043F\u043E \u0430\u0431\u0437\u0430\u0446\u0443 \u0443 \u0412\u0415\u0420\u0425\u041D\u0415\u0413\u041E \u043A\u0440\u0430\u044F \u044D\u043A\u0440\u0430\u043D\u0430, \u0438 \u043D\u0430\u0434\u0451\u0436\u043D\u0435\u0435 \u0432\u0441\u0435\u0433\u043E \u043E\u0442\u043C\u0435\u0442\u0438\u0442\u044C \u0435\u0433\u043E \u0441\u0430\u043C\u043E\u043C\u0443: \xAB\u22EF\xBB \u2192 \xAB\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C \u043F\u043E\u0437\u0438\u0446\u0438\u044E\xBB. \u041E\u0442\u043A\u0440\u043E\u0439\u0442\u0435 \u043A\u043D\u0438\u0433\u0443 \u0437\u0430\u043D\u043E\u0432\u043E, \u0447\u0442\u043E\u0431\u044B \u043F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C.": "\u201C\u5206\u9875\u201D\u4F1A\u5C06\u6587\u5B57\u6392\u6210\u4E66\u9875\u5E76\u9010\u9875\u7FFB\u9605\uFF1B\u201C\u6EDA\u52A8\u201D\u5219\u50CF\u7F51\u9875\u4E00\u6837\u8FDE\u7EED\u6D4F\u89C8\u3002\u6EDA\u52A8\u6A21\u5F0F\u6309\u5C4F\u5E55\u9876\u90E8\u9644\u8FD1\u7684\u6BB5\u843D\u8BB0\u5F55\u4F4D\u7F6E\uFF0C\u4E5F\u53EF\u4EE5\u901A\u8FC7\u201C\u22EF\u201D\u2192\u201C\u4FDD\u5B58\u4F4D\u7F6E\u201D\u624B\u52A8\u6807\u8BB0\u3002\u91CD\u65B0\u6253\u5F00\u4E66\u7C4D\u540E\u751F\u6548\u3002",
   "\u0421\u0442\u0440\u0430\u043D\u0438\u0446\u0430\u043C\u0438": "\u5206\u9875",
@@ -55254,6 +55262,7 @@ var DEFAULT = {
   exportColors: true,
   // По умолчанию читалка выглядит как сам Obsidian — включая тёмные темы.
   theme: "auto",
+  privacyShieldEnabled: false,
   // Библиотека — это интерфейс, а не страница книги: тёмное приложение со светлым
   // каталогом внутри выглядит сломанным, поэтому у неё своя тема и по умолчанию она
   // следует за Obsidian. "reader" — брать ту же тему, что у страницы книги.
@@ -55510,6 +55519,142 @@ function svgIcon(el, name) {
   } catch (e) {
   }
   return el;
+}
+function setupAutoHideTopbar(root, top) {
+  var _a2, _b;
+  root.addClass("er-top-auto-enabled");
+  top.addClass("er-top-autohide");
+  const trigger = root.createEl("button", {
+    cls: "er-top-reveal",
+    attr: { type: "button", "aria-label": "\u663E\u793A\u9605\u8BFB\u5DE5\u5177\u680F" }
+  });
+  root.insertBefore(trigger, top);
+  if (!((_b = (_a2 = window.matchMedia) == null ? void 0 : _a2.call(window, "(pointer: coarse)")) == null ? void 0 : _b.matches)) return;
+  let timer = 0;
+  const scheduleClose = () => {
+    window.clearTimeout(timer);
+    timer = window.setTimeout(() => root.removeClass("er-top-open"), 4500);
+  };
+  trigger.addEventListener("click", () => {
+    root.addClass("er-top-open");
+    scheduleClose();
+  });
+  top.addEventListener("click", scheduleClose);
+  top.addEventListener("keydown", scheduleClose);
+}
+function setupPrivacyShield(owner, root) {
+  var _a2;
+  if (!root || owner._privacyShieldCleanup) return;
+  root.style.position = "relative";
+  const shield = root.createDiv("er-privacy-shield");
+  shield.setAttribute("role", "button");
+  shield.setAttribute("tabindex", "0");
+  shield.setAttribute("aria-hidden", "true");
+  const code = shield.createDiv("er-privacy-code");
+  [
+    "const session = await reader.open(document);",
+    "function renderPage(source, options) {",
+    "  const blocks = parse(source);",
+    "  return layout(blocks, options);",
+    "}",
+    "",
+    "if (window.isFocused) {",
+    "  cache.restore(session);",
+    "  updateViewport();",
+    "}",
+    "",
+    "class ReaderState {",
+    "  constructor(position, preferences) {",
+    "    this.position = position;",
+    "    this.preferences = preferences;",
+    "  }",
+    "}",
+    "",
+    "const result = await storage.read(key);",
+    "console.info('ready');"
+  ].forEach((line, i) => {
+    const row = code.createDiv("er-privacy-line");
+    row.createSpan({ cls: "er-privacy-ln", text: String(i + 1).padStart(2, "0") });
+    row.createSpan({ cls: "er-privacy-src", text: line || " " });
+  });
+  const maskTitles = () => {
+    if (!owner.file) return;
+    const doc = root.ownerDocument;
+    const titles = Array.from(doc.querySelectorAll(".workspace-tab-header-inner-title, .view-header-title"));
+    owner._privacyTitleNodes = titles.filter((el) => {
+      var _a3;
+      return ((_a3 = el.textContent) == null ? void 0 : _a3.trim()) === owner.file.basename;
+    }).map((el) => ({ el, text: el.textContent }));
+    owner._privacyTitleNodes.forEach(({ el }) => {
+      el.textContent = "reader-state.ts";
+    });
+  };
+  const restoreTitles = () => {
+    (owner._privacyTitleNodes || []).forEach(({ el, text }) => {
+      if (el.isConnected && el.textContent === "reader-state.ts") el.textContent = text;
+    });
+    owner._privacyTitleNodes = [];
+  };
+  const onBlur = () => {
+    var _a3, _b;
+    if (((_b = (_a3 = owner.plugin) == null ? void 0 : _a3.settings) == null ? void 0 : _b.privacyShieldEnabled) !== true) return;
+    shield.addClass("er-privacy-shield-on");
+    shield.setAttribute("aria-hidden", "false");
+    owner._privacyShieldActive = true;
+    if (owner.titleEl) owner.titleEl.setText(__ertr("\u9605\u8BFB\u5185\u5BB9\u5DF2\u9690\u85CF"));
+    maskTitles();
+  };
+  const restore = () => {
+    shield.removeClass("er-privacy-shield-on");
+    shield.setAttribute("aria-hidden", "true");
+    owner._privacyShieldActive = false;
+    if (owner.titleEl && owner.file) owner.titleEl.setText(owner.file.basename);
+    restoreTitles();
+  };
+  shield.addEventListener("click", restore);
+  shield.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      restore();
+    }
+  });
+  window.addEventListener("blur", onBlur);
+  const onActiveLeafChange = (leaf) => {
+    var _a3, _b;
+    if (!owner.leaf || leaf === owner.leaf || ((_b = (_a3 = owner.plugin) == null ? void 0 : _a3.settings) == null ? void 0 : _b.privacyShieldEnabled) !== true) return;
+    onBlur();
+  };
+  if (((_a2 = owner.app) == null ? void 0 : _a2.workspace) && typeof owner.registerEvent === "function") {
+    owner.registerEvent(owner.app.workspace.on("active-leaf-change", onActiveLeafChange));
+  }
+  owner._privacyShieldCleanup = () => {
+    window.removeEventListener("blur", onBlur);
+    shield.removeEventListener("click", restore);
+    shield.remove();
+    restoreTitles();
+    owner._privacyShieldCleanup = null;
+  };
+}
+function setupAutoHideBottombar(root, bar) {
+  var _a2, _b;
+  bar.addClass("er-bot-autohide");
+  const trigger = root.createEl("button", {
+    cls: "er-bot-reveal",
+    attr: { type: "button", "aria-label": "\u663E\u793A\u9875\u7801\u548C\u9605\u8BFB\u8FDB\u5EA6" }
+  });
+  root.insertBefore(trigger, bar);
+  if (!((_b = (_a2 = window.matchMedia) == null ? void 0 : _a2.call(window, "(pointer: coarse)")) == null ? void 0 : _b.matches)) return;
+  let timer = 0;
+  const scheduleClose = () => {
+    window.clearTimeout(timer);
+    timer = window.setTimeout(() => root.removeClass("er-bot-open"), 4500);
+  };
+  trigger.addEventListener("click", () => {
+    root.addClass("er-bot-open");
+    scheduleClose();
+  });
+  bar.addEventListener("click", scheduleClose);
+  bar.addEventListener("keydown", scheduleClose);
 }
 function iconLabel(el, name, text) {
   svgIcon(el, name);
@@ -57467,7 +57612,7 @@ function epubNavKey(href) {
   return stack.join("/");
 }
 async function extractEpub(file, app) {
-  var _a2, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n, _o, _p, _q, _r, _s, _t, _u, _v, _w;
+  var _a2, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _A, _B, _C, _D;
   const buf = await app.vault.readBinary(file);
   const book = src_default(buf);
   await book.ready;
@@ -57502,28 +57647,7 @@ async function extractEpub(file, app) {
         el.setAttribute("id", unique);
         el.setAttribute("data-er-id", unique);
       }
-      for (const link of Array.from((_i = (_h = body.querySelectorAll) == null ? void 0 : _h.call(body, "a[href^='#']")) != null ? _i : [])) {
-        const href = link.getAttribute("href") || "";
-        let fragment = href.slice(1);
-        try {
-          fragment = decodeURIComponent(fragment);
-        } catch (e) {
-        }
-        const ref = ids.get(fragment);
-        if (!ref) continue;
-        link.setAttribute("data-er-ref", ref);
-        link.removeAttribute("href");
-        (_j = link.classList) == null ? void 0 : _j.add("er-footnote-ref");
-        const image = (_k = link.querySelector) == null ? void 0 : _k.call(link, "img");
-        const target = targets.get(fragment);
-        const isNoteIcon = image && /footnote|note/i.test(`${link.getAttribute("class") || ""} ${((_l = target == null ? void 0 : target.getAttribute) == null ? void 0 : _l.call(target, "class")) || ""} ${image.getAttribute("src") || ""}`);
-        if (isNoteIcon) {
-          const noteNumber = (_m = ((target == null ? void 0 : target.textContent) || "").match(/^\s*\[(\d+)\]/)) == null ? void 0 : _m[1];
-          link.textContent = noteNumber ? `[${noteNumber}]` : "\u2020";
-          link.setAttribute("data-er-footnote-marker", "1");
-        }
-      }
-      const imgs = Array.from((_o = (_n = body.querySelectorAll) == null ? void 0 : _n.call(body, "img")) != null ? _o : []);
+      const imgs = Array.from((_i = (_h = body.querySelectorAll) == null ? void 0 : _h.call(body, "img")) != null ? _i : []);
       const itemPath = String(item.url || item.href || "").split(/[?#]/, 1)[0];
       const itemDir = itemPath.split("/").slice(0, -1).join("/");
       const resolveArchivePath = (raw) => {
@@ -57540,9 +57664,62 @@ async function extractEpub(file, app) {
         }
         return "/" + stack.join("/");
       };
+      for (const [fragment, anchor] of targets) {
+        if (((_j = anchor.tagName) == null ? void 0 : _j.toLowerCase()) !== "a") continue;
+        let parent2 = anchor.parentElement;
+        while (parent2 && parent2 !== body) {
+          const type2 = ((_k = parent2.getAttribute) == null ? void 0 : _k.call(parent2, "epub:type")) || ((_l = parent2.getAttribute) == null ? void 0 : _l.call(parent2, "type")) || "";
+          const classes = ((_m = parent2.getAttribute) == null ? void 0 : _m.call(parent2, "class")) || "";
+          if (/footnote/i.test(`${type2} ${classes}`)) {
+            parent2.setAttribute("data-er-id", ids.get(fragment));
+            targets.set(fragment, parent2);
+            break;
+          }
+          parent2 = parent2.parentElement;
+        }
+      }
+      const currentDoc = epubNavKey(itemPath);
+      for (const link of Array.from((_o = (_n = body.querySelectorAll) == null ? void 0 : _n.call(body, "a[href]")) != null ? _o : [])) {
+        const href = link.getAttribute("href") || "";
+        let ancestor = link.parentElement;
+        let insideFootnote = false;
+        while (ancestor && ancestor !== body) {
+          if (/footnote/i.test(`${((_p = ancestor.getAttribute) == null ? void 0 : _p.call(ancestor, "epub:type")) || ""} ${((_q = ancestor.getAttribute) == null ? void 0 : _q.call(ancestor, "type")) || ""} ${((_r = ancestor.getAttribute) == null ? void 0 : _r.call(ancestor, "class")) || ""}`)) {
+            insideFootnote = true;
+            break;
+          }
+          ancestor = ancestor.parentElement;
+        }
+        if (insideFootnote) {
+          link.removeAttribute("href");
+          continue;
+        }
+        const hash = href.indexOf("#");
+        if (hash < 0 || hash === href.length - 1) continue;
+        const docPath = href.slice(0, hash);
+        if (docPath && epubNavKey(resolveArchivePath(docPath)) !== currentDoc) continue;
+        let fragment = href.slice(hash + 1);
+        try {
+          fragment = decodeURIComponent(fragment);
+        } catch (e) {
+        }
+        const ref = ids.get(fragment);
+        if (!ref) continue;
+        link.setAttribute("data-er-ref", ref);
+        link.removeAttribute("href");
+        (_s = link.classList) == null ? void 0 : _s.add("er-footnote-ref");
+        const image = (_t = link.querySelector) == null ? void 0 : _t.call(link, "img");
+        const target = targets.get(fragment);
+        const isNoteIcon = image && /footnote|note/i.test(`${link.getAttribute("class") || ""} ${((_u = target == null ? void 0 : target.getAttribute) == null ? void 0 : _u.call(target, "class")) || ""} ${image.getAttribute("src") || ""}`);
+        if (isNoteIcon) {
+          const noteNumber = (_v = ((target == null ? void 0 : target.textContent) || "").match(/^\s*\[(\d+)\]/)) == null ? void 0 : _v[1];
+          link.textContent = noteNumber ? `[${noteNumber}]` : "\u2020";
+          link.setAttribute("data-er-footnote-marker", "1");
+        }
+      }
       const epubCss = [];
-      for (const style of Array.from((_q = (_p = doc.querySelectorAll) == null ? void 0 : _p.call(doc, "style")) != null ? _q : [])) epubCss.push(style.textContent || "");
-      for (const link of Array.from((_s = (_r = doc.querySelectorAll) == null ? void 0 : _r.call(doc, 'link[rel~="stylesheet"][href]')) != null ? _s : [])) {
+      for (const style of Array.from((_x = (_w = doc.querySelectorAll) == null ? void 0 : _w.call(doc, "style")) != null ? _x : [])) epubCss.push(style.textContent || "");
+      for (const link of Array.from((_z = (_y = doc.querySelectorAll) == null ? void 0 : _y.call(doc, 'link[rel~="stylesheet"][href]')) != null ? _z : [])) {
         const href = link.getAttribute("href");
         if (!href) continue;
         try {
@@ -57563,9 +57740,9 @@ async function extractEpub(file, app) {
           }
         }
       }
-      for (const el of Array.from((_u = (_t = body.querySelectorAll) == null ? void 0 : _t.call(body, "*")) != null ? _u : [])) {
-        const inlineSize = (_v = el.style) == null ? void 0 : _v.fontSize;
-        const classes = String(((_w = el.getAttribute) == null ? void 0 : _w.call(el, "class")) || "").split(/\s+/).filter(Boolean);
+      for (const el of Array.from((_B = (_A = body.querySelectorAll) == null ? void 0 : _A.call(body, "*")) != null ? _B : [])) {
+        const inlineSize = (_C = el.style) == null ? void 0 : _C.fontSize;
+        const classes = String(((_D = el.getAttribute) == null ? void 0 : _D.call(el, "class")) || "").split(/\s+/).filter(Boolean);
         const size = inlineSize || classes.reduce((found, cls) => fontSizes.get(cls) || found, "");
         if (size) el.setAttribute("data-er-font-size", size);
       }
@@ -61536,6 +61713,7 @@ var ReaderView = class extends import_obsidian.ItemView {
     addBookFileMenu(this.app, menu, this.file);
   }
   getDisplayText() {
+    if (this._privacyShieldActive) return "reader-state.ts";
     let _a2, _b;
     return (_b = (_a2 = this.file) == null ? void 0 : _a2.basename) != null ? _b : "Book Reader";
   }
@@ -61813,13 +61991,17 @@ var ReaderView = class extends import_obsidian.ItemView {
   }
   // ── DOM ──────────────────────────────────────────────
   buildDOM() {
+    var _a2;
     const root = this.contentEl;
+    (_a2 = this._privacyShieldCleanup) == null ? void 0 : _a2.call(this);
     root.empty();
     root.addClass("er-view");
+    setupPrivacyShield(this, root);
     this.applyVars();
     const pb = root.createDiv("er-pbar");
     this.pbarFill = pb.createDiv("er-pbar-fill");
     const top = root.createDiv("er-top");
+    setupAutoHideTopbar(root, top);
     const lb = top.createDiv("er-ibtn");
     svgIcon(lb, "arrow-left");
     lb.addEventListener("click", () => this.plugin.openLibrary());
@@ -61869,11 +62051,11 @@ var ReaderView = class extends import_obsidian.ItemView {
     this.areaEl = root.createDiv("er-area");
     if ((this.plugin.settings.navMode || "buttons") === "click") root.addClass("er-navclick");
     const bot = root.createDiv("er-bot");
+    setupAutoHideBottombar(root, bot);
     const pv = bot.createDiv("er-navbtn");
     svgIcon(pv, "chevron-left");
     pv.addEventListener("click", () => this.nav("prev"));
-    const center = bot.createDiv("er-bot-center");
-    this.locEl = center.createDiv("er-loc er-loc-clickable");
+    this.locEl = bot.createDiv("er-loc er-loc-clickable er-page-current");
     this.locEl.setAttribute("aria-label", __ertr("\u041F\u0435\u0440\u0435\u0439\u0442\u0438 \u043A \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0435"));
     this.locEl.addEventListener("click", () => {
       if (!this.file || !this.pager || !this.pager.total) return;
@@ -61883,8 +62065,10 @@ var ReaderView = class extends import_obsidian.ItemView {
         this.plugin.saveProgress(this.file.path, cur, tot, this.pager.currentBlockIndex());
       }).open();
     });
-    this.pctEl = center.createDiv("er-pct");
+    this.pctEl = bot.createDiv("er-pct er-bottom-progress");
     this.pctEl.setText("0%");
+    this.totalEl = bot.createDiv("er-total er-page-total");
+    this.totalEl.setAttribute("aria-label", "\u603B\u9875\u6570");
     const nx = bot.createDiv("er-navbtn");
     svgIcon(nx, "chevron-right");
     nx.addEventListener("click", () => this.nav("next"));
@@ -61961,7 +62145,7 @@ var ReaderView = class extends import_obsidian.ItemView {
       menu.showAtMouseEvent(e);
     });
     this.registerDomEvent(docOf(this.containerEl), "keydown", (e) => {
-      let _a2;
+      let _a3;
       if (!this.bookHtml)
         return;
       const ae = docOf(this.areaEl).activeElement;
@@ -62104,8 +62288,8 @@ var ReaderView = class extends import_obsidian.ItemView {
     const pct = total > 0 ? Math.round((cur + 1) / total * 100) : 0;
     this.pbarFill.style.width = `${pct}%`;
     const bookPage = currentBookPage(this);
-    const where = this.ext === "pdf" ? __ertr("\u0420\u0430\u0437\u0432\u043E\u0440\u043E\u0442 {0} \u0438\u0437 {1}", cur + 1, total) : `${cur + 1} / ${total}`;
-    this.locEl.setText(bookPage ? __ertr("\u0441\u0442\u0440. {0}", bookPage) + " \xB7 " + where : where);
+    this.locEl.setText(String(bookPage || cur + 1));
+    this.totalEl.setText(String(total));
     this.pctEl.setText(`${pct}%`);
     renderVisibleFigures(this);
   }
@@ -62586,7 +62770,9 @@ var ReaderView = class extends import_obsidian.ItemView {
     });
   }
   async onClose() {
+    var _a3;
     erHideVeil(this);
+    (_a3 = this._privacyShieldCleanup) == null ? void 0 : _a3.call(this);
     let _a2;
     stopReadingTimer(this);
     window.clearTimeout(this._immTimer);
@@ -63357,11 +63543,15 @@ var ReaderModal = class extends import_obsidian.Modal {
     m.style.background = t.bg;
   }
   _buildDOM() {
+    var _a2;
     const root = this.contentEl;
+    (_a2 = this._privacyShieldCleanup) == null ? void 0 : _a2.call(this);
     root.empty();
+    setupPrivacyShield(this, root);
     const pb = root.createDiv("er-pbar");
     this.pbarFill = pb.createDiv("er-pbar-fill");
     const top = root.createDiv("er-top");
+    setupAutoHideTopbar(root, top);
     const lb = top.createDiv("er-ibtn");
     svgIcon(lb, "arrow-left");
     lb.setAttribute("aria-label", __ertr("\u0417\u0430\u043A\u0440\u044B\u0442\u044C \u043A\u043D\u0438\u0433\u0443"));
@@ -63408,11 +63598,11 @@ var ReaderModal = class extends import_obsidian.Modal {
     this.areaEl = root.createDiv("er-area er-marea");
     if ((this.plugin.settings.navMode || "buttons") === "click") root.addClass("er-navclick");
     const bot = root.createDiv("er-bot");
+    setupAutoHideBottombar(root, bot);
     const pv = bot.createDiv("er-navbtn");
     svgIcon(pv, "chevron-left");
     pv.addEventListener("click", () => this._nav("prev"));
-    const center = bot.createDiv("er-bot-center");
-    this.locEl = center.createDiv("er-loc er-loc-clickable");
+    this.locEl = bot.createDiv("er-loc er-loc-clickable er-page-current");
     this.locEl.setAttribute("aria-label", __ertr("\u041F\u0435\u0440\u0435\u0439\u0442\u0438 \u043A \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0435"));
     this.locEl.addEventListener("click", () => {
       if (!this.file || !this.pager || !this.pager.total) return;
@@ -63422,8 +63612,10 @@ var ReaderModal = class extends import_obsidian.Modal {
         this.plugin.saveProgress(this.file.path, cur, tot, this.pager.currentBlockIndex());
       }).open();
     });
-    this.pctEl = center.createDiv("er-pct");
+    this.pctEl = bot.createDiv("er-pct er-bottom-progress");
     this.pctEl.setText("0%");
+    this.totalEl = bot.createDiv("er-total er-page-total");
+    this.totalEl.setAttribute("aria-label", "\u603B\u9875\u6570");
     const nx = bot.createDiv("er-navbtn");
     svgIcon(nx, "chevron-right");
     nx.addEventListener("click", () => this._nav("next"));
@@ -63705,7 +63897,8 @@ var ReaderModal = class extends import_obsidian.Modal {
     const pct = total > 0 ? Math.round((cur + 1) / total * 100) : 0;
     this.pbarFill.style.width = `${pct}%`;
     const bookPage = currentBookPage(this);
-    this.locEl.setText(bookPage ? __ertr("\u0441\u0442\u0440. {0}", bookPage) + ` \xB7 ${cur + 1} / ${total}` : `${cur + 1} / ${total}`);
+    this.locEl.setText(String(bookPage || cur + 1));
+    this.totalEl.setText(String(total));
     this.pctEl.setText(`${pct}%`);
     renderVisibleFigures(this);
   }
@@ -64113,19 +64306,20 @@ var ReaderModal = class extends import_obsidian.Modal {
     });
   }
   onClose() {
-    var _a2, _b, _c, _d;
+    var _a2, _b, _c, _d, _e;
     stopReadingTimer(this);
+    (_a2 = this._privacyShieldCleanup) == null ? void 0 : _a2.call(this);
     if (this.plugin._openReaderModal === this) this.plugin._openReaderModal = null;
     clearFoundIn(this);
     if (this._selHandler) (this._selDoc || document).removeEventListener("selectionchange", this._selHandler);
-    (_a2 = this._resizeObs) == null ? void 0 : _a2.disconnect();
-    (_c = (_b = this._pdfLazy) == null ? void 0 : _b.destroy) == null ? void 0 : _c.call(_b);
+    (_b = this._resizeObs) == null ? void 0 : _b.disconnect();
+    (_d = (_c = this._pdfLazy) == null ? void 0 : _c.destroy) == null ? void 0 : _d.call(_c);
     this._pdfLazy = null;
     window.clearTimeout(this._rsT);
     window.clearTimeout(this._selTimer);
     window.clearTimeout(this._immTimer);
     window.clearTimeout(this._revealT);
-    (_d = this._closeWatch) == null ? void 0 : _d.disconnect();
+    (_e = this._closeWatch) == null ? void 0 : _e.disconnect();
     this.contentEl.empty();
   }
 };
@@ -64295,6 +64489,10 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
         const view = leaf.view;
         if (view && view.bookHtml) view.repaginate();
       }
+    }));
+    new import_obsidian.Setting(c).setName(__ertr("\u5931\u7126\u65F6\u9690\u85CF\u4E66\u7C4D\u5185\u5BB9")).setDesc(__ertr("\u7A97\u53E3\u5931\u53BB\u7126\u70B9\u65F6\u663E\u793A\u4EFF\u4EE3\u7801\u906E\u7F69\uFF1B\u56DE\u5230\u7A97\u53E3\u540E\u70B9\u51FB\u906E\u7F69\u6062\u590D\u9605\u8BFB\u3002")).addToggle((t) => t.setValue(this.plugin.settings.privacyShieldEnabled === true).onChange(async (v) => {
+      this.plugin.settings.privacyShieldEnabled = v;
+      await this.plugin.saveAll();
     }));
     c.createEl("h3", { cls: "er-set-h", text: __ertr("\u0426\u0435\u043B\u044C \u0447\u0442\u0435\u043D\u0438\u044F") });
     new import_obsidian.Setting(c).setName(__ertr("\u0422\u0430\u0439\u043C\u0435\u0440 \u0446\u0435\u043B\u0438 \u0447\u0442\u0435\u043D\u0438\u044F")).setDesc(__ertr("\u041E\u0431\u0440\u0430\u0442\u043D\u044B\u0439 \u043E\u0442\u0441\u0447\u0451\u0442 \u0434\u043E \u0434\u043D\u0435\u0432\u043D\u043E\u0439 \u0446\u0435\u043B\u0438 (\u043D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, 15 \u043C\u0438\u043D\u0443\u0442) \u2014 \u0441\u043A\u043E\u043B\u044C\u043A\u043E \u0435\u0449\u0451 \u043E\u0441\u0442\u0430\u043B\u043E\u0441\u044C \u043F\u0440\u043E\u0447\u0438\u0442\u0430\u0442\u044C. \u0417\u0430\u043F\u0443\u0441\u043A\u0430\u0435\u0442\u0441\u044F \u0412\u0420\u0423\u0427\u041D\u0423\u042E \u043A\u043D\u043E\u043F\u043A\u043E\u0439 \u25B6 \u0432\u0432\u0435\u0440\u0445\u0443 \u0447\u0438\u0442\u0430\u043B\u043A\u0438, \u0440\u044F\u0434\u043E\u043C \u0441 \xAB\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C\xBB (\u043F\u0430\u0443\u0437\u0430 \u2014 \u23F8).")).addToggle((t) => t.setValue(this.plugin.settings.timerEnabled !== false).onChange(async (v) => {
