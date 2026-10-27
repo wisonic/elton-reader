@@ -55082,6 +55082,14 @@ __erZH["\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C \u043F\u043E\u043
 __erZH["Book Reader \u2014 \u0411\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430"] = "Book Reader \u2014 \u4E66\u5E93";
 __erZH["\u041E\u0431\u043D\u043E\u0432\u0438\u0442\u044C (\u043F\u0435\u0440\u0435\u0440\u0438\u0441\u043E\u0432\u0430\u0442\u044C \u0432\u0438\u0434)"] = "\u5237\u65B0\uFF08\u91CD\u65B0\u7ED8\u5236\u754C\u9762\uFF09";
 __erZH["\u0412\u0441\u0435"] = "\u5168\u90E8";
+__erZH["\u041A\u0443\u0434\u0430 \u0432\u0435\u0441\u0442\u0438 \u0441\u0441\u044B\u043B\u043A\u0443 \xAB\u2014 \u0438\u0437 [[\u2026]]\xBB \u0432 \u0437\u0430\u043C\u0435\u0442\u043A\u0430\u0445 \u0438\u0437 \u0432\u044B\u0434\u0435\u043B\u0435\u043D\u0438\u0439. \u041F\u0443\u0441\u0442\u043E \u2014 \u0438\u043C\u044F \u0444\u0430\u0439\u043B\u0430 \u043A\u043D\u0438\u0433\u0438."] = "\u8BBE\u7F6E\u4ECE\u9AD8\u4EAE\u7B14\u8BB0\u8FD4\u56DE\u4E66\u7C4D\u7684\u94FE\u63A5\u540D\u79F0\u3002\u7559\u7A7A\u5219\u4F7F\u7528\u4E66\u7C4D\u6587\u4EF6\u540D\u3002";
+__erZH["\u0416\u0430\u043D\u0440 \u0438\u043B\u0438 \u0442\u0435\u043C\u0430 \u2014 \u043F\u043E \u043D\u0435\u0439 \u043A\u043D\u0438\u0433\u0438 \u0433\u0440\u0443\u043F\u043F\u0438\u0440\u0443\u044E\u0442\u0441\u044F \u0432 \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0435. \u041D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u043E \u2014 \u0447\u0435\u0440\u0435\u0437 \u0437\u0430\u043F\u044F\u0442\u0443\u044E. \u041F\u0443\u0441\u0442\u043E \u2014 \u0431\u0435\u0437 \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u0438."] = "\u8BBE\u7F6E\u4E66\u7C4D\u7684\u7C7B\u578B\u6216\u4E3B\u9898\uFF0C\u4E66\u5E93\u4F1A\u636E\u6B64\u5206\u7C7B\u3002\u591A\u4E2A\u7C7B\u522B\u8BF7\u7528\u9017\u53F7\u5206\u9694\uFF1B\u7559\u7A7A\u5219\u4E0D\u5206\u7C7B\u3002";
+__erZH["\u0416\u0430\u043D\u0440 \u0438\u043B\u0438 \u0442\u0435\u043C\u0430 \u2014 \u043F\u043E \u043D\u0435\u0439 \u043A\u043D\u0438\u0433\u0438 \u0433\u0440\u0443\u043F\u043F\u0438\u0440\u0443\u044E\u0442\u0441\u044F \u0432 \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0435. \u041D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u043E \u2014 \u0447\u0435\u0440\u0435\u0437 \u0437\u0430\u043F\u044F\u0442\u0443\u044E. \u041C\u043E\u0436\u043D\u043E \u043E\u0441\u0442\u0430\u0432\u0438\u0442\u044C \u043F\u0443\u0441\u0442\u044B\u043C."] = "\u8BBE\u7F6E\u4E66\u7C4D\u7684\u7C7B\u578B\u6216\u4E3B\u9898\uFF0C\u4E66\u5E93\u4F1A\u636E\u6B64\u5206\u7C7B\u3002\u591A\u4E2A\u7C7B\u522B\u8BF7\u7528\u9017\u53F7\u5206\u9694\uFF1B\u4E5F\u53EF\u4EE5\u7559\u7A7A\u3002";
+__erZH["\u0421\u0432\u043E\u0439 \u0448\u0430\u0431\u043B\u043E\u043D \u0442\u043E\u043B\u044C\u043A\u043E \u0434\u043B\u044F \u044D\u0442\u043E\u0439 \u043A\u043D\u0438\u0433\u0438 (\u043D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, \u043F\u043E\u0434 \u0436\u0430\u043D\u0440). \u041F\u0443\u0441\u0442\u043E \u2014 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0441\u044F \u043E\u0431\u0449\u0438\u0439 \u0448\u0430\u0431\u043B\u043E\u043D \u0438\u0437 \u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043A \u043F\u043B\u0430\u0433\u0438\u043D\u0430."] = "\u4E3A\u8FD9\u672C\u4E66\u5355\u72EC\u6307\u5B9A\u6A21\u677F\uFF08\u4F8B\u5982\u6309\u7C7B\u578B\u8BBE\u7F6E\uFF09\u3002\u7559\u7A7A\u5219\u4F7F\u7528\u63D2\u4EF6\u8BBE\u7F6E\u4E2D\u7684\u901A\u7528\u6A21\u677F\u3002";
+__erZH["{0} \u043C\u0438\u043D/\u0434\u0435\u043D\u044C"] = "\u6BCF\u5929 {0} \u5206\u949F";
+__erZH["\u041D\u0430\u0447\u0430\u0442\u044C \u0442\u0430\u0439\u043C\u0435\u0440"] = "\u5F00\u59CB\u8BA1\u65F6";
+__erZH["\u041F\u0440\u0438\u043E\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C \u0442\u0430\u0439\u043C\u0435\u0440"] = "\u6682\u505C\u8BA1\u65F6";
+__erZH["\u0421\u0435\u0433\u043E\u0434\u043D\u044F \u043F\u0440\u043E\u0447\u0438\u0442\u0430\u043D\u043E: {0} \u043C\u0438\u043D. \u0412\u0441\u0435\u0433\u043E \u0437\u0430 \u0432\u0441\u0451 \u0432\u0440\u0435\u043C\u044F: {1}. \u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u043A\u043D\u043E\u043F\u043A\u0443 \u0432\u044B\u0448\u0435, \u0447\u0442\u043E\u0431\u044B \u043D\u0430\u0447\u0430\u0442\u044C \u0438\u043B\u0438 \u043F\u0440\u0438\u043E\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C \u0442\u0430\u0439\u043C\u0435\u0440."] = "\u4ECA\u65E5\u5DF2\u9605\u8BFB {0} \u5206\u949F\uFF0C\u7D2F\u8BA1\u9605\u8BFB {1}\u3002\u70B9\u51FB\u4E0A\u65B9\u6309\u94AE\u53EF\u5F00\u59CB\u6216\u6682\u505C\u8BA1\u65F6\u3002";
 __erZH["\u0427\u0438\u0442\u0430\u044E"] = "\u5728\u8BFB";
 __erZH["\u041D\u0435 \u043D\u0430\u0447\u0430\u0442\u044B\u0435"] = "\u672A\u5F00\u59CB";
 __erZH["\u041F\u0440\u043E\u0447\u0438\u0442\u0430\u043D\u043E"] = "\u5DF2\u8BFB\u5B8C";
@@ -55521,7 +55529,7 @@ function svgIcon(el, name) {
   return el;
 }
 function setupAutoHideTopbar(root, top) {
-  var _a2, _b;
+  var _a2, _b, _c, _d;
   root.addClass("er-top-auto-enabled");
   top.addClass("er-top-autohide");
   const trigger = root.createEl("button", {
@@ -55529,7 +55537,14 @@ function setupAutoHideTopbar(root, top) {
     attr: { type: "button", "aria-label": "\u663E\u793A\u9605\u8BFB\u5DE5\u5177\u680F" }
   });
   root.insertBefore(trigger, top);
-  if (!((_b = (_a2 = window.matchMedia) == null ? void 0 : _a2.call(window, "(pointer: coarse)")) == null ? void 0 : _b.matches)) return;
+  if ((_b = (_a2 = window.matchMedia) == null ? void 0 : _a2.call(window, "(pointer: fine)")) == null ? void 0 : _b.matches) {
+    root.addEventListener("pointermove", (event) => {
+      const y = event.clientY - root.getBoundingClientRect().top;
+      root.toggleClass("er-top-open", y <= 18 || top.contains(event.target));
+    });
+    root.addEventListener("pointerleave", () => root.removeClass("er-top-open"));
+  }
+  if (!((_d = (_c = window.matchMedia) == null ? void 0 : _c.call(window, "(pointer: coarse)")) == null ? void 0 : _d.matches)) return;
   let timer = 0;
   const scheduleClose = () => {
     window.clearTimeout(timer);
@@ -55583,7 +55598,8 @@ function setupPrivacyShield(owner, root) {
     const titles = Array.from(doc.querySelectorAll(".workspace-tab-header-inner-title, .view-header-title"));
     owner._privacyTitleNodes = titles.filter((el) => {
       var _a3;
-      return ((_a3 = el.textContent) == null ? void 0 : _a3.trim()) === owner.file.basename;
+      const title = (_a3 = el.textContent) == null ? void 0 : _a3.trim();
+      return title === owner.file.basename || title === "Book Reader";
     }).map((el) => ({ el, text: el.textContent }));
     owner._privacyTitleNodes.forEach(({ el }) => {
       el.textContent = "reader-state.ts";
@@ -55636,14 +55652,22 @@ function setupPrivacyShield(owner, root) {
   };
 }
 function setupAutoHideBottombar(root, bar) {
-  var _a2, _b;
+  var _a2, _b, _c, _d;
   bar.addClass("er-bot-autohide");
   const trigger = root.createEl("button", {
     cls: "er-bot-reveal",
     attr: { type: "button", "aria-label": "\u663E\u793A\u9875\u7801\u548C\u9605\u8BFB\u8FDB\u5EA6" }
   });
   root.insertBefore(trigger, bar);
-  if (!((_b = (_a2 = window.matchMedia) == null ? void 0 : _a2.call(window, "(pointer: coarse)")) == null ? void 0 : _b.matches)) return;
+  if ((_b = (_a2 = window.matchMedia) == null ? void 0 : _a2.call(window, "(pointer: fine)")) == null ? void 0 : _b.matches) {
+    root.addEventListener("pointermove", (event) => {
+      const rect = root.getBoundingClientRect();
+      const y = event.clientY - rect.top;
+      root.toggleClass("er-bot-open", y >= rect.height - 18 || bar.contains(event.target));
+    });
+    root.addEventListener("pointerleave", () => root.removeClass("er-bot-open"));
+  }
+  if (!((_d = (_c = window.matchMedia) == null ? void 0 : _c.call(window, "(pointer: coarse)")) == null ? void 0 : _d.matches)) return;
   let timer = 0;
   const scheduleClose = () => {
     window.clearTimeout(timer);
@@ -55874,6 +55898,7 @@ function resetTimerSession(view) {
   new import_obsidian.Notice(__ertr("\u0422\u0430\u0439\u043C\u0435\u0440 \u0441\u0431\u0440\u043E\u0448\u0435\u043D"));
 }
 function updateTimerBtn(view) {
+  if (view._goalTimerUpdate) view._goalTimerUpdate();
   if (!view.timerBtnEl) return;
   const s = view.plugin.settings;
   if (!s.timerEnabled) {
@@ -56065,29 +56090,6 @@ function buildBookSettings(view, p) {
     }).open();
   });
 }
-function panelSection(view, p, { label, emoji, settingKey, defaultOpen = false }) {
-  const hdr = p.createDiv("er-pan-adv-hdr");
-  if (emoji) hdr.createSpan({ cls: "er-pan-adv-ic", text: emoji });
-  hdr.createSpan({ cls: "er-pan-adv-lbl", text: label });
-  const count = hdr.createSpan({ cls: "er-pan-adv-count" });
-  const car = hdr.createSpan({ cls: "er-pan-adv-car", text: "\u203A" });
-  const wrap = p.createDiv("er-pan-adv");
-  const body = wrap.createDiv("er-pan-adv-body");
-  body._erCount = count;
-  const stored = view.plugin.settings[settingKey];
-  if (stored === void 0 ? defaultOpen : stored) {
-    wrap.addClass("er-pan-adv-on");
-    car.addClass("er-pan-adv-car-on");
-  }
-  hdr.addEventListener("click", async () => {
-    const on = wrap.hasClass("er-pan-adv-on");
-    wrap.toggleClass("er-pan-adv-on", !on);
-    car.toggleClass("er-pan-adv-car-on", !on);
-    view.plugin.settings[settingKey] = !on;
-    await view.plugin._saveLocalData();
-  });
-  return body;
-}
 function buildReaderExtraSettings(view, p) {
   const s = view.plugin.settings;
   const sec = (l) => p.createDiv("er-pan-sec").setText(l);
@@ -56138,6 +56140,11 @@ function buildReaderExtraSettings(view, p) {
   p.createDiv("er-pan-hint").setText(__ertr("\u041A\u0443\u0434\u0430 \u043F\u0440\u0438\u0436\u0438\u043C\u0430\u0442\u044C \u0442\u0435\u043A\u0441\u0442, \u0435\u0441\u043B\u0438 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0430 \u0437\u0430\u043F\u043E\u043B\u043D\u0435\u043D\u0430 \u043D\u0435 \u0434\u043E \u043A\u043E\u043D\u0446\u0430 \u2014 \u043D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, \u0432 \u043A\u043E\u043D\u0446\u0435 \u0433\u043B\u0430\u0432\u044B."));
   sec(__ertr("\u0426\u0435\u043B\u044C \u0447\u0442\u0435\u043D\u0438\u044F"));
   const onRow = p.createDiv("er-col-row");
+  const timerRow = p.createDiv("er-col-row");
+  const timerToggle = timerRow.createDiv("er-col-btn");
+  view._goalTimerUpdate = () => timerToggle.setText(view._running ? __ertr("\u041F\u0440\u0438\u043E\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C \u0442\u0430\u0439\u043C\u0435\u0440") : __ertr("\u041D\u0430\u0447\u0430\u0442\u044C \u0442\u0430\u0439\u043C\u0435\u0440"));
+  view._goalTimerUpdate();
+  timerToggle.addEventListener("click", () => toggleTimerSession(view));
   const goalStep = p.createDiv("er-sz-row");
   [["on", __ertr("\u0412\u043A\u043B")], ["off", __ertr("\u0412\u044B\u043A\u043B")]].forEach(([v, label]) => {
     const btn = onRow.createDiv("er-col-btn");
@@ -56173,7 +56180,7 @@ function buildReaderExtraSettings(view, p) {
   const totalMin = Math.floor(view.plugin.getTotalSeconds() / 60);
   const totalH = Math.floor(totalMin / 60);
   const totalStr = totalH > 0 ? __ertr("{0} \u0447 {1} \u043C\u0438\u043D", totalH, totalMin % 60) : __ertr("{0} \u043C\u0438\u043D", totalMin);
-  p.createDiv("er-pan-hint").setText(__ertr("\u0421\u0435\u0433\u043E\u0434\u043D\u044F \u043F\u0440\u043E\u0447\u0438\u0442\u0430\u043D\u043E: {0} \u043C\u0438\u043D. \u0412\u0441\u0435\u0433\u043E \u0437\u0430 \u0432\u0441\u0451 \u0432\u0440\u0435\u043C\u044F: {1}. \u041A\u043D\u043E\u043F\u043A\u0430 \u25B6 \u0432\u0432\u0435\u0440\u0445\u0443 \u0437\u0430\u043F\u0443\u0441\u043A\u0430\u0435\u0442 \u043E\u0431\u0440\u0430\u0442\u043D\u044B\u0439 \u043E\u0442\u0441\u0447\u0451\u0442 \u0434\u043E \u0446\u0435\u043B\u0438 (\u043F\u0430\u0443\u0437\u0430 \u2014 \u23F8).", mins, totalStr));
+  p.createDiv("er-pan-hint").setText(__ertr("\u0421\u0435\u0433\u043E\u0434\u043D\u044F \u043F\u0440\u043E\u0447\u0438\u0442\u0430\u043D\u043E: {0} \u043C\u0438\u043D. \u0412\u0441\u0435\u0433\u043E \u0437\u0430 \u0432\u0441\u0451 \u0432\u0440\u0435\u043C\u044F: {1}. \u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u043A\u043D\u043E\u043F\u043A\u0443 \u0432\u044B\u0448\u0435, \u0447\u0442\u043E\u0431\u044B \u043D\u0430\u0447\u0430\u0442\u044C \u0438\u043B\u0438 \u043F\u0440\u0438\u043E\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C \u0442\u0430\u0439\u043C\u0435\u0440.", mins, totalStr));
   buildBookSettings(view, p);
 }
 function escHtml(s) {
@@ -56630,7 +56637,26 @@ var EltonReader = class extends import_obsidian.Plugin {
   }
   _saveLocalData() {
     captureDeviceProfile(this.settings);
-    return this.saveData({ settings: this.settings, progressBackups: this.progressBackups, highlightsBackups: this.highlightsBackups, lastBookPath: this._lastBookPath || "" });
+    const snapshot = { settings: this.settings, progressBackups: this.progressBackups, highlightsBackups: this.highlightsBackups, lastBookPath: this._lastBookPath || "" };
+    this._localDataChain = (this._localDataChain || Promise.resolve()).catch(() => {
+    }).then(() => this.saveData(snapshot));
+    return this._localDataChain;
+  }
+  async flushReaderState(view) {
+    var _a2, _b, _c;
+    if ((view == null ? void 0 : view.file) && view.bookHtml && ((_a2 = view.pager) == null ? void 0 : _a2.total) > 0) {
+      let block = null;
+      try {
+        (_c = (_b = view.pager).syncScrollPosition) == null ? void 0 : _c.call(_b);
+        block = view.pager.currentBlockIndex();
+      } catch (e) {
+      }
+      this.saveProgress(view.file.path, view.pager.spread, view.pager.total, block);
+    }
+    await Promise.allSettled([
+      this._progressChain || Promise.resolve(),
+      this._localDataChain || Promise.resolve()
+    ]);
   }
   // ── Cover thumbnail cache (separate, device-local, NOT synced) ─────────────
   _thumbCachePath() {
@@ -56874,7 +56900,25 @@ var EltonReader = class extends import_obsidian.Plugin {
     return all;
   }
   async _loadProgressFromVault(bookPath) {
-    return this._loadJsonMaps("reading-progress.json", bookPath);
+    const progress = await this._loadJsonMaps("reading-progress.json", bookPath);
+    const rescueFiles = this.app.vault.getFiles().filter((file) => {
+      if (file.name !== "reading-progress.json") return false;
+      const marker = "/_reader-rescue/";
+      const at = file.path.indexOf(marker);
+      if (at < 0) return false;
+      if (!bookPath) return true;
+      const dataDir = this._progressFilePath(bookPath).replace(/\/[^/]+$/, "");
+      return file.path.startsWith(`${dataDir}/_reader-rescue/`);
+    }).sort((a, b) => b.path.localeCompare(a.path));
+    for (const file of rescueFiles) {
+      const rescue = await this._readJsonMap(file.path);
+      for (const [key, value] of Object.entries(rescue)) {
+        if (bookPath && key !== bookPath) continue;
+        const current = progress[key];
+        if (!current || Number(value == null ? void 0 : value.lastRead) > Number(current.lastRead)) progress[key] = value;
+      }
+    }
+    return progress;
   }
   async _saveBookDataToVault(filename, values, bookPath) {
     try {
@@ -57051,11 +57095,11 @@ var EltonReader = class extends import_obsidian.Plugin {
   // Re-reads progress from vault file — call before opening a book
   // to get fresh data after Obsidian Sync may have updated the file.
   async refreshProgress(bookPath) {
+    await Promise.allSettled([this._progressChain || Promise.resolve(), this._localDataChain || Promise.resolve()]);
     const incoming = await this._loadProgressFromVault(bookPath);
-    if (!bookPath) this.progress = incoming;
-    else {
-      if (!Object.prototype.hasOwnProperty.call(incoming, bookPath)) delete this.progress[bookPath];
-      Object.assign(this.progress, incoming);
+    for (const [key, value] of Object.entries(incoming)) {
+      const current = this.progress[key];
+      if (!current || Number(value == null ? void 0 : value.lastRead) >= Number(current.lastRead)) this.progress[key] = value;
     }
   }
   // ── Highlights ────────────────────────────────────────
@@ -57531,7 +57575,7 @@ var Paginator = class {
   // rect reads on every scroll settle, and this runs on every saved position.
   _blockIndexAtScroll() {
     const blocks = this._blocks();
-    if (!blocks.length || !this.clip) return 0;
+    if (!blocks.length || !this.clip) return -1;
     const fTop = this.flow.getBoundingClientRect().top;
     const want = this.clip.scrollTop - 2;
     const topAt = (i) => blocks[i].getBoundingClientRect().top - fTop;
@@ -57550,7 +57594,7 @@ var Paginator = class {
   currentBlockIndex() {
     if (this.scrollMode) return this._blockIndexAtScroll();
     const blocks = this._blocks();
-    if (!blocks.length || !this.sw) return 0;
+    if (!blocks.length || !this.sw) return -1;
     const fLeft = this.flow.getBoundingClientRect().left;
     const winLeft = this._spreadOffset() - 2;
     const xat = (i) => blocks[i].getBoundingClientRect().left - fLeft;
@@ -57588,6 +57632,13 @@ var Paginator = class {
     return blocks[Math.min(Math.max(0, idx), blocks.length - 1)] || null;
   }
   get currentSpread() {
+    return this.spread;
+  }
+  syncScrollPosition() {
+    if (!this.scrollMode || !this.clip || !this.total) return this.spread;
+    window.clearTimeout(this._scrollT);
+    const h = this.clip.clientHeight || 1;
+    this.spread = Math.max(0, Math.min(Math.round(this.clip.scrollTop / h), this.total - 1));
     return this.spread;
   }
   get currentPct() {
@@ -60109,6 +60160,51 @@ function suggestNoteTitle(text, max = 60) {
   if (sp > max * 0.5) cut = cut.slice(0, sp);
   return cut.replace(/\s+[a-zа-яё]{1,2}$/i, "").replace(/[.,;:!?…\-—\s]+$/, "");
 }
+var BookmarksModal = class extends import_obsidian.Modal {
+  constructor(app, view) {
+    super(app);
+    this.view = view;
+  }
+  onOpen() {
+    const c = this.contentEl;
+    c.addClass("er-bookmarks-modal");
+    c.createDiv("er-info-title").setText(__ertr("\u4E66\u7B7E\u5217\u8868"));
+    const listEl = c.createDiv("er-hist-row");
+    const view = this.view;
+    const list = view.file ? view.plugin.getBackups(view.file.path) : [];
+    if (!list.length) {
+      listEl.createDiv("er-hist-empty").setText(__ertr("\u6682\u65F6\u6CA1\u6709\u4E66\u7B7E"));
+      return;
+    }
+    const dateLocale = view.plugin.settings.language === "zh" ? "zh-CN" : view.plugin.settings.language === "en" ? "en-US" : "ru-RU";
+    [...list].reverse().slice(0, 30).forEach((snap) => {
+      const chip = listEl.createDiv("er-hist-chip");
+      if (snap.manual) chip.addClass("er-hist-manual");
+      const d = new Date(snap.ts || snap.lastRead || Date.now());
+      chip.setText(`${snap.manual ? "\u{1F516} " : ""}${snap.percent}% \xB7 ${d.toLocaleString(dateLocale, { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })}`);
+      chip.addEventListener("click", () => {
+        if (!view.bookHtml || !view.pager) return;
+        this.close();
+        if (typeof snap.block === "number" && snap.block >= 0) {
+          if (typeof view._jumpToBlock === "function") view._jumpToBlock(snap.block);
+          else {
+            const [cur, tot] = view.pager.jumpTo(view.pager.spreadForBlock(snap.block));
+            (view.updateUI || view._updateUI).call(view, cur, tot);
+          }
+        } else {
+          const frac = typeof snap.pct === "number" ? snap.pct : (snap.percent || 0) / 100;
+          const [cur, tot] = view.pager.jumpTo(Math.round(frac * Math.max(0, view.pager.total - 1)));
+          (view.updateUI || view._updateUI).call(view, cur, tot);
+          if (view.file) view.plugin.saveProgress(view.file.path, cur, tot, view.pager.currentBlockIndex());
+        }
+        new import_obsidian.Notice(__ertr("\u0412\u0435\u0440\u043D\u0443\u043B\u0438\u0441\u044C \u043A {0}%", snap.percent));
+      });
+    });
+  }
+  onClose() {
+    this.contentEl.empty();
+  }
+};
 var ReadSettingsModal = class extends import_obsidian.Modal {
   constructor(app, view) {
     super(app);
@@ -60295,11 +60391,6 @@ var ReadSettingsModal = class extends import_obsidian.Modal {
     colC.createDiv("er-rs-h").setText(__ertr("\u0427\u0442\u0435\u043D\u0438\u0435"));
     buildReaderExtraSettings(v, colC);
     const foot = c.createDiv("er-rs-foot");
-    if (typeof v._renderHistory === "function") {
-      foot.createDiv("er-pan-sec").setText(__ertr("\u0412\u0435\u0440\u043D\u0443\u0442\u044C\u0441\u044F \u043A \u043C\u0435\u0441\u0442\u0443"));
-      v._histRow = foot.createDiv("er-hist-row");
-      v._renderHistory();
-    }
     const act = foot.createDiv("er-act-row");
     const help = act.createDiv("er-act-btn");
     iconLabel(help, "info", __ertr("\u0421\u043F\u0440\u0430\u0432\u043A\u0430"));
@@ -61865,7 +61956,8 @@ var ReaderView = class extends import_obsidian.ItemView {
       0
     );
     this._laidOutWidth = this.pager.builtWidth || w;
-    const hasBlock = typeof savedBlock === "number" && savedBlock >= 0;
+    const blockCount = this.pager._blocks().length;
+    const hasBlock = typeof savedBlock === "number" && savedBlock >= 0 && savedBlock < blockCount;
     const targetSpread = hasBlock ? this.pager.spreadForBlock(savedBlock) : Math.round(savedPct * Math.max(0, total - 1));
     this._renderFlowHighlights();
     const [cur, tot] = this.pager.jumpTo(targetSpread);
@@ -62008,19 +62100,10 @@ var ReaderView = class extends import_obsidian.ItemView {
     this.titleEl = top.createDiv("er-top-title");
     this.titleEl.setText("Book Reader");
     const tr = top.createDiv("er-top-right");
-    this.timerBtnEl = tr.createDiv("er-timerbtn");
-    this.timerIconEl = this.timerBtnEl.createDiv("er-timer-ic");
-    this.timerLabelEl = this.timerBtnEl.createDiv("er-timer-label");
-    this.timerResetEl = this.timerBtnEl.createDiv("er-timer-reset");
-    svgIcon(this.timerResetEl, "rotate-ccw");
-    this.timerResetEl.setAttribute("aria-label", __ertr("\u0421\u0431\u0440\u043E\u0441\u0438\u0442\u044C \u0442\u0430\u0439\u043C\u0435\u0440"));
-    this.timerResetEl.addEventListener("click", (e) => {
-      e.stopPropagation();
-      resetTimerSession(this);
-    });
-    this.timerBtnEl.setAttribute("aria-label", __ertr("\u0422\u0430\u0439\u043C\u0435\u0440: \u0441\u043A\u043E\u043B\u044C\u043A\u043E \u043E\u0441\u0442\u0430\u043B\u043E\u0441\u044C \u0434\u043E \u0446\u0435\u043B\u0438 \u2014 \u0441\u0442\u0430\u0440\u0442/\u043F\u0430\u0443\u0437\u0430"));
-    this.timerBtnEl.addEventListener("click", () => toggleTimerSession(this));
-    updateTimerBtn(this);
+    const bookmarksBtn = tr.createDiv("er-ibtn");
+    svgIcon(bookmarksBtn, "bookmark");
+    bookmarksBtn.setAttribute("aria-label", __ertr("\u4E66\u7B7E\u5217\u8868"));
+    bookmarksBtn.addEventListener("click", () => new BookmarksModal(this.app, this).open());
     const saveBtn = tr.createDiv("er-ibtn");
     svgIcon(saveBtn, "save");
     saveBtn.setAttribute("aria-label", __ertr("\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C \u043F\u043E\u0437\u0438\u0446\u0438\u044E"));
@@ -62074,7 +62157,7 @@ var ReaderView = class extends import_obsidian.ItemView {
     nx.addEventListener("click", () => this.nav("next"));
     this.overlayEl = root.createDiv("er-overlay");
     this.overlayEl.addEventListener("click", () => this.closePanel());
-    this.settPan = root.createDiv("er-panel");
+    this.settPan = root.createDiv("er-panel er-settings-panel");
     this.tocPan = root.createDiv("er-panel er-toc-panel");
     this.hlPan = root.createDiv("er-panel er-toc-panel er-hl-panel");
     this.findPan = root.createDiv("er-panel er-toc-panel er-find-panel");
@@ -62285,7 +62368,7 @@ var ReaderView = class extends import_obsidian.ItemView {
   }
   updateUI(cur, total) {
     if (this.contentEl) this.contentEl.toggleClass("er-scrolling", !!(this.pager && this.pager.scrollMode));
-    const pct = total > 0 ? Math.round((cur + 1) / total * 100) : 0;
+    const pct = total > 1 ? Math.round(cur / (total - 1) * 100) : 0;
     this.pbarFill.style.width = `${pct}%`;
     const bookPage = currentBookPage(this);
     this.locEl.setText(String(bookPage || cur + 1));
@@ -62404,12 +62487,6 @@ var ReaderView = class extends import_obsidian.ItemView {
       });
     });
     buildReaderExtraSettings(this, adv);
-    this._histRow = panelSection(this, p, {
-      label: __ertr("\u0412\u0435\u0440\u043D\u0443\u0442\u044C\u0441\u044F \u043A \u043C\u0435\u0441\u0442\u0443"),
-      emoji: "\u{1F516}",
-      settingKey: "readerHistOpen"
-    }).createDiv("er-hist-row");
-    this._renderHistory();
     sec(__ertr("\u0414\u0435\u0439\u0441\u0442\u0432\u0438\u044F"));
     const actRow = p.createDiv("er-act-row");
     const mkAct = (label, ic, fn) => {
@@ -62430,12 +62507,13 @@ var ReaderView = class extends import_obsidian.ItemView {
       c.createDiv("er-hist-empty").setText(__ertr("\u0422\u043E\u0447\u0435\u043A \u043F\u043E\u043A\u0430 \u043D\u0435\u0442"));
       return;
     }
+    const dateLocale = this.plugin.settings.language === "zh" ? "zh-CN" : this.plugin.settings.language === "en" ? "en-US" : "ru-RU";
     [...list].reverse().slice(0, 14).forEach((snap) => {
       const chip = c.createDiv("er-hist-chip");
       if (snap.manual) chip.addClass("er-hist-manual");
       const d = new Date(snap.ts || snap.lastRead || Date.now());
       const mark = snap.manual ? "\u{1F4BE} " : "";
-      chip.setText(`${mark}${snap.percent}% \xB7 ${d.toLocaleString("ru-RU", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })}`);
+      chip.setText(`${mark}${snap.percent}% \xB7 ${d.toLocaleString(dateLocale, { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })}`);
       chip.addEventListener("click", () => {
         if (!this.bookHtml) return;
         const total = this.pager.total;
@@ -62771,6 +62849,7 @@ var ReaderView = class extends import_obsidian.ItemView {
   }
   async onClose() {
     var _a3;
+    await this.plugin.flushReaderState(this);
     erHideVeil(this);
     (_a3 = this._privacyShieldCleanup) == null ? void 0 : _a3.call(this);
     let _a2;
@@ -63559,19 +63638,10 @@ var ReaderModal = class extends import_obsidian.Modal {
     this.titleEl = top.createDiv("er-top-title");
     this.titleEl.setText(this.file.basename);
     const tr = top.createDiv("er-top-right");
-    this.timerBtnEl = tr.createDiv("er-timerbtn");
-    this.timerIconEl = this.timerBtnEl.createDiv("er-timer-ic");
-    this.timerLabelEl = this.timerBtnEl.createDiv("er-timer-label");
-    this.timerResetEl = this.timerBtnEl.createDiv("er-timer-reset");
-    svgIcon(this.timerResetEl, "rotate-ccw");
-    this.timerResetEl.setAttribute("aria-label", __ertr("\u0421\u0431\u0440\u043E\u0441\u0438\u0442\u044C \u0442\u0430\u0439\u043C\u0435\u0440"));
-    this.timerResetEl.addEventListener("click", (e) => {
-      e.stopPropagation();
-      resetTimerSession(this);
-    });
-    this.timerBtnEl.setAttribute("aria-label", __ertr("\u0422\u0430\u0439\u043C\u0435\u0440: \u0441\u043A\u043E\u043B\u044C\u043A\u043E \u043E\u0441\u0442\u0430\u043B\u043E\u0441\u044C \u0434\u043E \u0446\u0435\u043B\u0438 \u2014 \u0441\u0442\u0430\u0440\u0442/\u043F\u0430\u0443\u0437\u0430"));
-    this.timerBtnEl.addEventListener("click", () => toggleTimerSession(this));
-    updateTimerBtn(this);
+    const bookmarksBtn = tr.createDiv("er-ibtn");
+    svgIcon(bookmarksBtn, "bookmark");
+    bookmarksBtn.setAttribute("aria-label", __ertr("\u4E66\u7B7E\u5217\u8868"));
+    bookmarksBtn.addEventListener("click", () => new BookmarksModal(this.app, this).open());
     const moreBtn = tr.createDiv("er-ibtn er-b-more");
     svgIcon(moreBtn, "more-horizontal");
     moreBtn.setAttribute("aria-label", __ertr("\u0415\u0449\u0451"));
@@ -63621,7 +63691,7 @@ var ReaderModal = class extends import_obsidian.Modal {
     nx.addEventListener("click", () => this._nav("next"));
     this.overlayEl = root.createDiv("er-overlay");
     this.overlayEl.addEventListener("click", () => this._closePanel());
-    this.settPan = root.createDiv("er-panel");
+    this.settPan = root.createDiv("er-panel er-settings-panel");
     this.tocPan = root.createDiv("er-panel er-toc-panel");
     this.hlPan = root.createDiv("er-panel er-toc-panel er-hl-panel");
     this.findPan = root.createDiv("er-panel er-toc-panel er-find-panel");
@@ -63771,7 +63841,8 @@ var ReaderModal = class extends import_obsidian.Modal {
         erHideVeil(this);
       }, 3e3);
       await this.pager.build(this.areaEl, this.bookHtml, this.plugin.settings, 0);
-      const hasBlock = saved && typeof saved.block === "number" && saved.block >= 0;
+      const blockCount = this.pager._blocks().length;
+      const hasBlock = saved && typeof saved.block === "number" && saved.block >= 0 && saved.block < blockCount;
       const target = hasBlock ? this.pager.spreadForBlock(saved.block) : Math.round(pct * Math.max(0, this.pager.total - 1));
       this._renderFlowHighlights();
       const [cur, tot] = this.pager.jumpTo(target);
@@ -63894,7 +63965,7 @@ var ReaderModal = class extends import_obsidian.Modal {
     if (this.contentEl) this.contentEl.toggleClass("er-scrolling", !!(this.pager && this.pager.scrollMode));
     cur = cur != null ? cur : this.pager.spread;
     total = total != null ? total : this.pager.total;
-    const pct = total > 0 ? Math.round((cur + 1) / total * 100) : 0;
+    const pct = total > 1 ? Math.round(cur / (total - 1) * 100) : 0;
     this.pbarFill.style.width = `${pct}%`;
     const bookPage = currentBookPage(this);
     this.locEl.setText(String(bookPage || cur + 1));
@@ -63985,12 +64056,6 @@ var ReaderModal = class extends import_obsidian.Modal {
       });
     });
     buildReaderExtraSettings(this, adv);
-    this._histRow = panelSection(this, p, {
-      label: __ertr("\u0412\u0435\u0440\u043D\u0443\u0442\u044C\u0441\u044F \u043A \u043C\u0435\u0441\u0442\u0443"),
-      emoji: "\u{1F516}",
-      settingKey: "readerHistOpen"
-    }).createDiv("er-hist-row");
-    this._renderHistory();
     p.createDiv("er-pan-sec").setText(__ertr("\u0414\u0435\u0439\u0441\u0442\u0432\u0438\u044F"));
     const actRow = p.createDiv("er-act-row");
     const actBtn = actRow.createDiv("er-act-btn");
@@ -64011,12 +64076,13 @@ var ReaderModal = class extends import_obsidian.Modal {
       c.createDiv("er-hist-empty").setText(__ertr("\u0422\u043E\u0447\u0435\u043A \u043F\u043E\u043A\u0430 \u043D\u0435\u0442"));
       return;
     }
+    const dateLocale = this.plugin.settings.language === "zh" ? "zh-CN" : this.plugin.settings.language === "en" ? "en-US" : "ru-RU";
     [...list].reverse().slice(0, 14).forEach((snap) => {
       const chip = c.createDiv("er-hist-chip");
       if (snap.manual) chip.addClass("er-hist-manual");
       const d = new Date(snap.ts || snap.lastRead || Date.now());
       const mark = snap.manual ? "\u{1F4BE} " : "";
-      chip.setText(`${mark}${snap.percent}% \xB7 ${d.toLocaleString("ru-RU", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })}`);
+      chip.setText(`${mark}${snap.percent}% \xB7 ${d.toLocaleString(dateLocale, { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })}`);
       chip.addEventListener("click", () => {
         if (!this.bookHtml) return;
         this._closePanel();
@@ -64305,8 +64371,9 @@ var ReaderModal = class extends import_obsidian.Modal {
       item.addEventListener("contextmenu", showHlMenu);
     });
   }
-  onClose() {
+  async onClose() {
     var _a2, _b, _c, _d, _e;
+    await this.plugin.flushReaderState(this);
     stopReadingTimer(this);
     (_a2 = this._privacyShieldCleanup) == null ? void 0 : _a2.call(this);
     if (this.plugin._openReaderModal === this) this.plugin._openReaderModal = null;

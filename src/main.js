@@ -389,6 +389,14 @@ __erZH["Сохранить позицию чтения"] = "添加书签";
 __erZH["Book Reader — Библиотека"] = "Book Reader — 书库";
 __erZH["Обновить (перерисовать вид)"] = "刷新（重新绘制界面）";
 __erZH["Все"] = "全部";
+__erZH["Куда вести ссылку «— из [[…]]» в заметках из выделений. Пусто — имя файла книги."] = "设置从高亮笔记返回书籍的链接名称。留空则使用书籍文件名。";
+__erZH["Жанр или тема — по ней книги группируются в библиотеке. Несколько — через запятую. Пусто — без категории."] = "设置书籍的类型或主题，书库会据此分类。多个类别请用逗号分隔；留空则不分类。";
+__erZH["Жанр или тема — по ней книги группируются в библиотеке. Несколько — через запятую. Можно оставить пустым."] = "设置书籍的类型或主题，书库会据此分类。多个类别请用逗号分隔；也可以留空。";
+__erZH["Свой шаблон только для этой книги (например, под жанр). Пусто — используется общий шаблон из настроек плагина."] = "为这本书单独指定模板（例如按类型设置）。留空则使用插件设置中的通用模板。";
+__erZH["{0} мин/день"] = "每天 {0} 分钟";
+__erZH["Начать таймер"] = "开始计时";
+__erZH["Приостановить таймер"] = "暂停计时";
+__erZH["Сегодня прочитано: {0} мин. Всего за всё время: {1}. Нажмите кнопку выше, чтобы начать или приостановить таймер."] = "今日已阅读 {0} 分钟，累计阅读 {1}。点击上方按钮可开始或暂停计时。";
 __erZH["Читаю"] = "在读";
 __erZH["Не начатые"] = "未开始";
 __erZH["Прочитано"] = "已读完";
@@ -890,6 +898,13 @@ function setupAutoHideTopbar(root, top) {
     attr: { type: "button", "aria-label": "显示阅读工具栏" }
   });
   root.insertBefore(trigger, top);
+  if (window.matchMedia?.("(pointer: fine)")?.matches) {
+    root.addEventListener("pointermove", (event) => {
+      const y = event.clientY - root.getBoundingClientRect().top;
+      root.toggleClass("er-top-open", y <= 18 || top.contains(event.target));
+    });
+    root.addEventListener("pointerleave", () => root.removeClass("er-top-open"));
+  }
   if (!window.matchMedia?.("(pointer: coarse)")?.matches) return;
   let timer = 0;
   const scheduleClose = () => {
@@ -941,7 +956,10 @@ function setupPrivacyShield(owner, root) {
     if (!owner.file) return;
     const doc = root.ownerDocument;
     const titles = Array.from(doc.querySelectorAll(".workspace-tab-header-inner-title, .view-header-title"));
-    owner._privacyTitleNodes = titles.filter((el) => el.textContent?.trim() === owner.file.basename).map((el) => ({ el, text: el.textContent }));
+    owner._privacyTitleNodes = titles.filter((el) => {
+      const title = el.textContent?.trim();
+      return title === owner.file.basename || title === "Book Reader";
+    }).map((el) => ({ el, text: el.textContent }));
     owner._privacyTitleNodes.forEach(({ el }) => { el.textContent = "reader-state.ts"; });
   };
   const restoreTitles = () => {
@@ -992,6 +1010,14 @@ function setupAutoHideBottombar(root, bar) {
     attr: { type: "button", "aria-label": "显示页码和阅读进度" }
   });
   root.insertBefore(trigger, bar);
+  if (window.matchMedia?.("(pointer: fine)")?.matches) {
+    root.addEventListener("pointermove", (event) => {
+      const rect = root.getBoundingClientRect();
+      const y = event.clientY - rect.top;
+      root.toggleClass("er-bot-open", y >= rect.height - 18 || bar.contains(event.target));
+    });
+    root.addEventListener("pointerleave", () => root.removeClass("er-bot-open"));
+  }
   if (!window.matchMedia?.("(pointer: coarse)")?.matches) return;
   let timer = 0;
   const scheduleClose = () => {
@@ -1244,6 +1270,7 @@ function resetTimerSession(view) {
 // remaining = goal − read-today, shown as m:ss and ticking down while running.
 // At 0 it flips to a green "done" state with a check.
 function updateTimerBtn(view) {
+  if (view._goalTimerUpdate) view._goalTimerUpdate();
   if (!view.timerBtnEl) return;
   const s = view.plugin.settings;
   if (!s.timerEnabled) { view.timerBtnEl.addClass("er-hidden"); return; }
@@ -1524,6 +1551,11 @@ function buildReaderExtraSettings(view, p) {
   p.createDiv("er-pan-hint").setText(__ertr("Куда прижимать текст, если страница заполнена не до конца — например, в конце главы."));
   sec(__ertr("Цель чтения"));
   const onRow = p.createDiv("er-col-row");
+  const timerRow = p.createDiv("er-col-row");
+  const timerToggle = timerRow.createDiv("er-col-btn");
+  view._goalTimerUpdate = () => timerToggle.setText(view._running ? __ertr("Приостановить таймер") : __ertr("Начать таймер"));
+  view._goalTimerUpdate();
+  timerToggle.addEventListener("click", () => toggleTimerSession(view));
   const goalStep = p.createDiv("er-sz-row");
   [["on", __ertr("Вкл")], ["off", __ertr("Выкл")]].forEach(([v, label]) => {
     const btn = onRow.createDiv("er-col-btn");
@@ -1557,7 +1589,7 @@ function buildReaderExtraSettings(view, p) {
   const totalMin = Math.floor(view.plugin.getTotalSeconds() / 60);
   const totalH = Math.floor(totalMin / 60);
   const totalStr = totalH > 0 ? __ertr("{0} ч {1} мин", totalH, totalMin % 60) : __ertr("{0} мин", totalMin);
-  p.createDiv("er-pan-hint").setText(__ertr("Сегодня прочитано: {0} мин. Всего за всё время: {1}. Кнопка ▶ вверху запускает обратный отсчёт до цели (пауза — ⏸).", (mins), totalStr));
+  p.createDiv("er-pan-hint").setText(__ertr("Сегодня прочитано: {0} мин. Всего за всё время: {1}. Нажмите кнопку выше, чтобы начать или приостановить таймер.", (mins), totalStr));
   buildBookSettings(view, p);
 }
 function escHtml(s) {
@@ -2104,7 +2136,23 @@ const EltonReader = class extends Plugin {
   }
   _saveLocalData() {
     captureDeviceProfile(this.settings);
-    return this.saveData({ settings: this.settings, progressBackups: this.progressBackups, highlightsBackups: this.highlightsBackups, lastBookPath: this._lastBookPath || "" });
+    const snapshot = { settings: this.settings, progressBackups: this.progressBackups, highlightsBackups: this.highlightsBackups, lastBookPath: this._lastBookPath || "" };
+    this._localDataChain = (this._localDataChain || Promise.resolve()).catch(() => {}).then(() => this.saveData(snapshot));
+    return this._localDataChain;
+  }
+  async flushReaderState(view) {
+    if (view?.file && view.bookHtml && view.pager?.total > 0) {
+      let block = null;
+      try {
+        view.pager.syncScrollPosition?.();
+        block = view.pager.currentBlockIndex();
+      } catch { /* a closing view may already be detaching */ }
+      this.saveProgress(view.file.path, view.pager.spread, view.pager.total, block);
+    }
+    await Promise.allSettled([
+      this._progressChain || Promise.resolve(),
+      this._localDataChain || Promise.resolve()
+    ]);
   }
   // ── Cover thumbnail cache (separate, device-local, NOT synced) ─────────────
   _thumbCachePath() { return erPath(`${this.manifest.dir}/thumb-cache.json`); }
@@ -2337,7 +2385,29 @@ const EltonReader = class extends Plugin {
     return all;
   }
   async _loadProgressFromVault(bookPath) {
-    return this._loadJsonMaps("reading-progress.json", bookPath);
+    const progress = await this._loadJsonMaps("reading-progress.json", bookPath);
+    // A forced app exit or a sync conflict can leave the main file one save
+    // behind. The dated rescue copies are written beside it; use a newer rescue
+    // entry when available, while keeping the normal file as the source when it
+    // has the latest timestamp.
+    const rescueFiles = this.app.vault.getFiles().filter((file) => {
+      if (file.name !== "reading-progress.json") return false;
+      const marker = "/_reader-rescue/";
+      const at = file.path.indexOf(marker);
+      if (at < 0) return false;
+      if (!bookPath) return true;
+      const dataDir = this._progressFilePath(bookPath).replace(/\/[^/]+$/, "");
+      return file.path.startsWith(`${dataDir}/_reader-rescue/`);
+    }).sort((a, b) => b.path.localeCompare(a.path));
+    for (const file of rescueFiles) {
+      const rescue = await this._readJsonMap(file.path);
+      for (const [key, value] of Object.entries(rescue)) {
+        if (bookPath && key !== bookPath) continue;
+        const current = progress[key];
+        if (!current || Number(value?.lastRead) > Number(current.lastRead)) progress[key] = value;
+      }
+    }
+    return progress;
   }
   async _saveBookDataToVault(filename, values, bookPath) {
     try {
@@ -2515,11 +2585,14 @@ const EltonReader = class extends Plugin {
   // Re-reads progress from vault file — call before opening a book
   // to get fresh data after Obsidian Sync may have updated the file.
   async refreshProgress(bookPath) {
+    // A reader can be closed and reopened while its previous asynchronous
+    // write is still in flight. Do not read the older disk copy and erase the
+    // freshly saved in-memory position in that small window.
+    await Promise.allSettled([this._progressChain || Promise.resolve(), this._localDataChain || Promise.resolve()]);
     const incoming = await this._loadProgressFromVault(bookPath);
-    if (!bookPath) this.progress = incoming;
-    else {
-      if (!Object.prototype.hasOwnProperty.call(incoming, bookPath)) delete this.progress[bookPath];
-      Object.assign(this.progress, incoming);
+    for (const [key, value] of Object.entries(incoming)) {
+      const current = this.progress[key];
+      if (!current || Number(value?.lastRead) >= Number(current.lastRead)) this.progress[key] = value;
     }
   }
   // ── Highlights ────────────────────────────────────────
@@ -3156,7 +3229,7 @@ const Paginator = class {
   // rect reads on every scroll settle, and this runs on every saved position.
   _blockIndexAtScroll() {
     const blocks = this._blocks();
-    if (!blocks.length || !this.clip) return 0;
+    if (!blocks.length || !this.clip) return -1;
     const fTop = this.flow.getBoundingClientRect().top;
     const want = this.clip.scrollTop - 2;
     const topAt = (i) => blocks[i].getBoundingClientRect().top - fTop;
@@ -3172,7 +3245,7 @@ const Paginator = class {
   currentBlockIndex() {
     if (this.scrollMode) return this._blockIndexAtScroll();
     const blocks = this._blocks();
-    if (!blocks.length || !this.sw) return 0;
+    if (!blocks.length || !this.sw) return -1;
     const fLeft = this.flow.getBoundingClientRect().left;
     // Same anchored offset the transform uses, so "what is on screen" and "where
     // we scrolled to" can never disagree.
@@ -3211,6 +3284,13 @@ const Paginator = class {
     return blocks[Math.min(Math.max(0, idx), blocks.length - 1)] || null;
   }
   get currentSpread() {
+    return this.spread;
+  }
+  syncScrollPosition() {
+    if (!this.scrollMode || !this.clip || !this.total) return this.spread;
+    window.clearTimeout(this._scrollT);
+    const h = this.clip.clientHeight || 1;
+    this.spread = Math.max(0, Math.min(Math.round(this.clip.scrollTop / h), this.total - 1));
     return this.spread;
   }
   get currentPct() {
@@ -5908,6 +5988,49 @@ function suggestNoteTitle(text, max = 60) {
   if (sp > max * 0.5) cut = cut.slice(0, sp);
   return cut.replace(/\s+[a-zа-яё]{1,2}$/i, "").replace(/[.,;:!?…\-—\s]+$/, "");
 }
+const BookmarksModal = class extends Modal {
+  constructor(app, view) {
+    super(app);
+    this.view = view;
+  }
+  onOpen() {
+    const c = this.contentEl;
+    c.addClass("er-bookmarks-modal");
+    c.createDiv("er-info-title").setText(__ertr("书签列表"));
+    const listEl = c.createDiv("er-hist-row");
+    const view = this.view;
+    const list = view.file ? view.plugin.getBackups(view.file.path) : [];
+    if (!list.length) {
+      listEl.createDiv("er-hist-empty").setText(__ertr("暂时没有书签"));
+      return;
+    }
+    const dateLocale = view.plugin.settings.language === "zh" ? "zh-CN" : view.plugin.settings.language === "en" ? "en-US" : "ru-RU";
+    [...list].reverse().slice(0, 30).forEach((snap) => {
+      const chip = listEl.createDiv("er-hist-chip");
+      if (snap.manual) chip.addClass("er-hist-manual");
+      const d = new Date(snap.ts || snap.lastRead || Date.now());
+      chip.setText(`${snap.manual ? "🔖 " : ""}${snap.percent}% · ${d.toLocaleString(dateLocale, { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })}`);
+      chip.addEventListener("click", () => {
+        if (!view.bookHtml || !view.pager) return;
+        this.close();
+        if (typeof snap.block === "number" && snap.block >= 0) {
+          if (typeof view._jumpToBlock === "function") view._jumpToBlock(snap.block);
+          else {
+            const [cur, tot] = view.pager.jumpTo(view.pager.spreadForBlock(snap.block));
+            (view.updateUI || view._updateUI).call(view, cur, tot);
+          }
+        } else {
+          const frac = typeof snap.pct === "number" ? snap.pct : (snap.percent || 0) / 100;
+          const [cur, tot] = view.pager.jumpTo(Math.round(frac * Math.max(0, view.pager.total - 1)));
+          (view.updateUI || view._updateUI).call(view, cur, tot);
+          if (view.file) view.plugin.saveProgress(view.file.path, cur, tot, view.pager.currentBlockIndex());
+        }
+        new Notice(__ertr("Вернулись к {0}%", snap.percent));
+      });
+    });
+  }
+  onClose() { this.contentEl.empty(); }
+};
 const ReadSettingsModal = class extends Modal {
   constructor(app, view) {
     super(app);
@@ -6109,11 +6232,6 @@ const ReadSettingsModal = class extends Modal {
     colC.createDiv("er-rs-h").setText(__ertr("Чтение"));
     buildReaderExtraSettings(v, colC);
     const foot = c.createDiv("er-rs-foot");
-    if (typeof v._renderHistory === "function") {
-      foot.createDiv("er-pan-sec").setText(__ertr("Вернуться к месту"));
-      v._histRow = foot.createDiv("er-hist-row");
-      v._renderHistory();
-    }
     const act = foot.createDiv("er-act-row");
     const help = act.createDiv("er-act-btn");
     iconLabel(help, "info", __ertr("Справка"));
@@ -7684,7 +7802,8 @@ const ReaderView = class extends ItemView {
       0
     );
     this._laidOutWidth = this.pager.builtWidth || w;
-    const hasBlock = typeof savedBlock === "number" && savedBlock >= 0;
+    const blockCount = this.pager._blocks().length;
+    const hasBlock = typeof savedBlock === "number" && savedBlock >= 0 && savedBlock < blockCount;
     const targetSpread = hasBlock ? this.pager.spreadForBlock(savedBlock) : Math.round(savedPct * Math.max(0, total - 1));
     this._renderFlowHighlights();
     const [cur, tot] = this.pager.jumpTo(targetSpread);
@@ -7826,19 +7945,10 @@ const ReaderView = class extends ItemView {
     this.titleEl = top.createDiv("er-top-title");
     this.titleEl.setText("Book Reader");
     const tr = top.createDiv("er-top-right");
-    this.timerBtnEl = tr.createDiv("er-timerbtn");
-    this.timerIconEl = this.timerBtnEl.createDiv("er-timer-ic");
-    this.timerLabelEl = this.timerBtnEl.createDiv("er-timer-label");
-    this.timerResetEl = this.timerBtnEl.createDiv("er-timer-reset");
-    svgIcon(this.timerResetEl, "rotate-ccw");
-    this.timerResetEl.setAttribute("aria-label", __ertr("Сбросить таймер"));
-    this.timerResetEl.addEventListener("click", (e) => {
-      e.stopPropagation();
-      resetTimerSession(this);
-    });
-    this.timerBtnEl.setAttribute("aria-label", __ertr("Таймер: сколько осталось до цели — старт/пауза"));
-    this.timerBtnEl.addEventListener("click", () => toggleTimerSession(this));
-    updateTimerBtn(this);
+    const bookmarksBtn = tr.createDiv("er-ibtn");
+    svgIcon(bookmarksBtn, "bookmark");
+    bookmarksBtn.setAttribute("aria-label", __ertr("书签列表"));
+    bookmarksBtn.addEventListener("click", () => new BookmarksModal(this.app, this).open());
     const saveBtn = tr.createDiv("er-ibtn");
     svgIcon(saveBtn, "save");
     saveBtn.setAttribute("aria-label", __ertr("Сохранить позицию"));
@@ -7892,7 +8002,7 @@ const ReaderView = class extends ItemView {
     nx.addEventListener("click", () => this.nav("next"));
     this.overlayEl = root.createDiv("er-overlay");
     this.overlayEl.addEventListener("click", () => this.closePanel());
-    this.settPan = root.createDiv("er-panel");
+    this.settPan = root.createDiv("er-panel er-settings-panel");
     this.tocPan = root.createDiv("er-panel er-toc-panel");
     this.hlPan = root.createDiv("er-panel er-toc-panel er-hl-panel");
     this.findPan = root.createDiv("er-panel er-toc-panel er-find-panel");
@@ -8105,7 +8215,7 @@ const ReaderView = class extends ItemView {
     // В прокрутке листать нечего: стрелки и клик по краю там ничего не делают
     // и только занимают место. Класс снимает их из вида одним правилом.
     if (this.contentEl) this.contentEl.toggleClass("er-scrolling", !!(this.pager && this.pager.scrollMode));
-    const pct = total > 0 ? Math.round((cur + 1) / total * 100) : 0;
+    const pct = total > 1 ? Math.round(cur / (total - 1) * 100) : 0;
     this.pbarFill.style.width = `${pct}%`;
     const bookPage = currentBookPage(this);
     this.locEl.setText(String(bookPage || cur + 1));
@@ -8224,12 +8334,6 @@ const ReaderView = class extends ItemView {
       });
     });
     buildReaderExtraSettings(this, adv);
-    this._histRow = panelSection(this, p, {
-      label: __ertr("Вернуться к месту"),
-      emoji: "\u{1F516}",
-      settingKey: "readerHistOpen"
-    }).createDiv("er-hist-row");
-    this._renderHistory();
     sec(__ertr("Действия"));
     const actRow = p.createDiv("er-act-row");
     const mkAct = (label, ic, fn) => {
@@ -8250,12 +8354,13 @@ const ReaderView = class extends ItemView {
       c.createDiv("er-hist-empty").setText(__ertr("Точек пока нет"));
       return;
     }
+    const dateLocale = this.plugin.settings.language === "zh" ? "zh-CN" : this.plugin.settings.language === "en" ? "en-US" : "ru-RU";
     [...list].reverse().slice(0, 14).forEach((snap) => {
       const chip = c.createDiv("er-hist-chip");
       if (snap.manual) chip.addClass("er-hist-manual");
       const d = new Date(snap.ts || snap.lastRead || Date.now());
       const mark = snap.manual ? "\u{1F4BE} " : "";
-      chip.setText(`${mark}${snap.percent}% \xB7 ${d.toLocaleString("ru-RU", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })}`);
+      chip.setText(`${mark}${snap.percent}% \xB7 ${d.toLocaleString(dateLocale, { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })}`);
       chip.addEventListener("click", () => {
         if (!this.bookHtml) return;
         const total = this.pager.total;
@@ -8593,6 +8698,7 @@ const ReaderView = class extends ItemView {
     });
   }
   async onClose() {
+    await this.plugin.flushReaderState(this);
     erHideVeil(this);
     this._privacyShieldCleanup?.();
     let _a;
@@ -9496,19 +9602,13 @@ const ReaderModal = class extends Modal {
     this.titleEl = top.createDiv("er-top-title");
     this.titleEl.setText(this.file.basename);
     const tr     = top.createDiv("er-top-right");
-    this.timerBtnEl = tr.createDiv("er-timerbtn");
-    this.timerIconEl = this.timerBtnEl.createDiv("er-timer-ic");
-    this.timerLabelEl = this.timerBtnEl.createDiv("er-timer-label");
-    this.timerResetEl = this.timerBtnEl.createDiv("er-timer-reset");
-    svgIcon(this.timerResetEl, "rotate-ccw");
-    this.timerResetEl.setAttribute("aria-label", __ertr("Сбросить таймер"));
-    this.timerResetEl.addEventListener("click", (e) => { e.stopPropagation(); resetTimerSession(this); });
-    this.timerBtnEl.setAttribute("aria-label", __ertr("Таймер: сколько осталось до цели — старт/пауза"));
-    this.timerBtnEl.addEventListener("click", () => toggleTimerSession(this));
-    updateTimerBtn(this);
+    const bookmarksBtn = tr.createDiv("er-ibtn");
+    svgIcon(bookmarksBtn, "bookmark");
+    bookmarksBtn.setAttribute("aria-label", __ertr("书签列表"));
+    bookmarksBtn.addEventListener("click", () => new BookmarksModal(this.app, this).open());
     // The mobile toolbar was cramped (title squeezed to «Д..»). The secondary
     // actions now live inside ONE «⋯» button that opens a native menu, so the top
-    // bar keeps only the timer, «⋯» and the reading-settings ⚙ — the book title
+    // bar keeps bookmarks, «⋯» and reading settings — the book title
     // finally has room to breathe.
     const moreBtn = tr.createDiv("er-ibtn er-b-more");
     svgIcon(moreBtn, "more-horizontal");
@@ -9572,7 +9672,7 @@ const ReaderModal = class extends Modal {
     nx.addEventListener("click", () => this._nav("next"));
     this.overlayEl = root.createDiv("er-overlay");
     this.overlayEl.addEventListener("click", () => this._closePanel());
-    this.settPan = root.createDiv("er-panel");
+    this.settPan = root.createDiv("er-panel er-settings-panel");
     this.tocPan  = root.createDiv("er-panel er-toc-panel");
     this.hlPan   = root.createDiv("er-panel er-toc-panel er-hl-panel");
     this.findPan = root.createDiv("er-panel er-toc-panel er-find-panel");
@@ -9722,7 +9822,8 @@ const ReaderModal = class extends Modal {
         erHideVeil(this);
       }, 3000);
       await this.pager.build(this.areaEl, this.bookHtml, this.plugin.settings, 0);
-      const hasBlock = saved && typeof saved.block === "number" && saved.block >= 0;
+      const blockCount = this.pager._blocks().length;
+      const hasBlock = saved && typeof saved.block === "number" && saved.block >= 0 && saved.block < blockCount;
       const target = hasBlock
         ? this.pager.spreadForBlock(saved.block)
         : Math.round(pct * Math.max(0, this.pager.total - 1));
@@ -9850,7 +9951,7 @@ const ReaderModal = class extends Modal {
     if (this.contentEl) this.contentEl.toggleClass("er-scrolling", !!(this.pager && this.pager.scrollMode));
     cur = cur != null ? cur : this.pager.spread;
     total = total != null ? total : this.pager.total;
-    const pct = total > 0 ? Math.round((cur + 1) / total * 100) : 0;
+    const pct = total > 1 ? Math.round(cur / (total - 1) * 100) : 0;
     this.pbarFill.style.width = `${pct}%`;
     const bookPage = currentBookPage(this);
     this.locEl.setText(String(bookPage || cur + 1));
@@ -9939,10 +10040,6 @@ const ReaderModal = class extends Modal {
       });
     });
     buildReaderExtraSettings(this, adv);
-    this._histRow = panelSection(this, p, {
-      label: __ertr("Вернуться к месту"), emoji: "🔖", settingKey: "readerHistOpen",
-    }).createDiv("er-hist-row");
-    this._renderHistory();
     p.createDiv("er-pan-sec").setText(__ertr("Действия"));
     const actRow = p.createDiv("er-act-row");
     const actBtn = actRow.createDiv("er-act-btn");
@@ -9958,12 +10055,13 @@ const ReaderModal = class extends Modal {
     const badge = c.parentElement && c.parentElement._erCount;
     if (badge) badge.setText(list.length ? String(list.length) : "");
     if (!list.length) { c.createDiv("er-hist-empty").setText(__ertr("Точек пока нет")); return; }
+    const dateLocale = this.plugin.settings.language === "zh" ? "zh-CN" : this.plugin.settings.language === "en" ? "en-US" : "ru-RU";
     [...list].reverse().slice(0, 14).forEach((snap) => {
       const chip = c.createDiv("er-hist-chip");
       if (snap.manual) chip.addClass("er-hist-manual");
       const d = new Date(snap.ts || snap.lastRead || Date.now());
       const mark = snap.manual ? "💾 " : "";
-      chip.setText(`${mark}${snap.percent}% · ${d.toLocaleString("ru-RU", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })}`);
+      chip.setText(`${mark}${snap.percent}% · ${d.toLocaleString(dateLocale, { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })}`);
       chip.addEventListener("click", () => {
         if (!this.bookHtml) return;
         this._closePanel();
@@ -10239,7 +10337,8 @@ const ReaderModal = class extends Modal {
       item.addEventListener("contextmenu", showHlMenu);
     });
   }
-  onClose() {
+  async onClose() {
+    await this.plugin.flushReaderState(this);
     stopReadingTimer(this);
     this._privacyShieldCleanup?.();
     if (this.plugin._openReaderModal === this) this.plugin._openReaderModal = null;
